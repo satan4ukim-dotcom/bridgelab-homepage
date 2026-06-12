@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 300">
+  <defs>
+    <linearGradient id="gP" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0B1D3A"/>
+      <stop offset="55%" stop-color="#114A8B"/>
+      <stop offset="100%" stop-color="#00A6A6"/>
+    </linearGradient>
+    <linearGradient id="gA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#114A8B"/>
+      <stop offset="50%" stop-color="#00A6A6"/>
+      <stop offset="100%" stop-color="#A6D96A"/>
+    </linearGradient>
+    <linearGradient id="gI" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#37C3A3"/>
+      <stop offset="100%" stop-color="#A6D96A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 심볼: P (Bridge) -->
+  <path d="M62 258 L62 92 C62 46 100 26 132 38 C166 51 168 100 136 114 C118 122 95 118 80 104"
+        fill="none" stroke="url(#gP)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 심볼: 아치(Data &amp; Intelligence) → i (Lab) -->
+  <path d="M62 258 C100 162 160 102 218 106 C276 110 298 184 328 228 C344 251 370 250 378 226 L378 158"
+        fill="none" stroke="url(#gA)" stroke-width="30" stroke-linecap="round"/>
+
+  <!-- i의 점 (Opportunity) -->
+  <circle cx="378" cy="106" r="20" fill="url(#gI)"/>
+
+  <!-- 데이터 핀 -->
+  <g stroke-width="7" stroke-linecap="round">
+    <line x1="150" y1="258" x2="150" y2="212" stroke="#114A8B"/>
+    <line x1="185" y1="258" x2="185" y2="182" stroke="#1B7BC0"/>
+    <line x1="220" y1="258" x2="220" y2="167" stroke="#00A6A6"/>
+    <line x1="255" y1="258" x2="255" y2="187" stroke="#37C3A3"/>
+    <line x1="290" y1="258" x2="290" y2="222" stroke="#A6D96A"/>
+  </g>
+  <circle cx="150" cy="205" r="9" fill="#114A8B"/>
+  <circle cx="185" cy="175" r="9" fill="#1B7BC0"/>
+  <circle cx="220" cy="160" r="9" fill="#00A6A6"/>
+  <circle cx="255" cy="180" r="9" fill="#37C3A3"/>
+  <circle cx="290" cy="215" r="9" fill="#A6D96A"/>
+
+  <!-- 워드마크 -->
+  <g font-family="Pretendard, 'Segoe UI', 'Malgun Gothic', sans-serif">
+    <text x="450" y="150" font-size="104" font-weight="700" fill="#0B1D3A" letter-spacing="-2">Bridgelab</text>
+    <text x="453" y="240" font-size="58" font-weight="700" fill="#114A8B" letter-spacing="8">브릿지랩</text>
+    <line x1="768" y1="192" x2="768" y2="246" stroke="#9AA5B1" stroke-width="2"/>
+    <text x="790" y="212" font-size="31" fill="#5A6572">R&amp;D-to-Market</text>
+    <text x="790" y="248" font-size="31" fill="#5A6572">Venture Studio</text>
+  </g>
+</svg>
