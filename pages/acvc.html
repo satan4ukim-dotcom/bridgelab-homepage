@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridgelab — AC/VC 파트너 소개</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --navy: #0B1D3A;
+  --blue: #114ABB;
+  --cyan: #00A6A6;
+  --teal: #37C3A3;
+  --lime: #A6D96A;
+  --bg: #F5F7FC;
+  --white: #FFFFFF;
+  --gray: #8A96AF;
+  --light: #EDF1FA;
+  --text: #1A2340;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ── HERO ─────────────────────────────────── */
+.hero {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 60px 72px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 400px at 80% 50%, rgba(0,166,166,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 400px 300px at 10% 80%, rgba(17,74,187,0.25) 0%, transparent 70%);
+}
+.hero-inner {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,166,166,0.15);
+  border: 1px solid rgba(0,166,166,0.35);
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--teal);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(90deg, var(--teal), var(--lime));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-size: 16px;
+  color: rgba(255,255,255,0.62);
+  font-weight: 300;
+  margin-bottom: 44px;
+  max-width: 560px;
+  line-height: 1.7;
+}
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.stat-num span {
+  font-size: 16px;
+  color: var(--teal);
+}
+.stat-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.5px;
+}
+.hero-logo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'DM Serif Display', serif;
+  font-size: 120px;
+  color: rgba(255,255,255,0.04);
+  letter-spacing: -4px;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* ── SECTION WRAPPER ─────────────────────── */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 60px;
+}
+.section + .section {
+  padding-top: 0;
+}
+.section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.section-desc {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.75;
+  margin-bottom: 36px;
+  max-width: 580px;
+}
+
+/* ── PAIN CARDS ─────────────────────────── */
+.pain-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.pain-card {
+  background: var(--white);
+  border: 1.5px solid #E2E8F5;
+  border-radius: 14px;
+  padding: 22px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.pain-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #E84545, #ff7b5e);
+}
+.pain-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: block;
+}
+.pain-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 7px;
+  line-height: 1.4;
+}
+.pain-desc {
+  font-size: 12px;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+/* ── BRIDGE ARROW ─────────────────────────── */
+.bridge-section {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+.bridge-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 700px 300px at 50% 100%, rgba(0,166,166,0.12) 0%, transparent 70%);
+}
+.bridge-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 60px;
+  position: relative;
+  z-index: 1;
+}
+.bridge-headline {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.bridge-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  margin-bottom: 44px;
+}
+.flow-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.flow-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.flow-box {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  min-width: 90px;
+  line-height: 1.35;
+}
+.flow-box.highlight {
+  background: linear-gradient(135deg, rgba(0,166,166,0.3), rgba(166,217,106,0.2));
+  border-color: rgba(0,166,166,0.5);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 18px 22px;
+  min-width: 120px;
+}
+.flow-label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.5px;
+}
+.flow-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+.arrow-line {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(0,166,166,0.5), rgba(255,255,255,0.15));
+}
+.arrow-tip {
+  margin-top: -4px;
+  margin-left: 32px;
+  width: 0; height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid rgba(0,166,166,0.6);
+}
+.flow-arrow-label {
+  font-size: 9px;
+  color: rgba(0,166,166,0.6);
+  margin-top: 4px;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+/* ── SERVICE CARDS ─────────────────────────── */
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.service-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 26px 24px;
+  border: 1.5px solid #E2E8F5;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 12px 40px rgba(17,74,187,0.1);
+  transform: translateY(-2px);
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+}
+.service-card.s1::before { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
+.service-card.s2::before { background: linear-gradient(90deg, var(--cyan), var(--teal)); }
+.service-card.s3::before { background: linear-gradient(90deg, var(--teal), var(--lime)); }
+.service-card.s4::before { background: linear-gradient(90deg, var(--navy), var(--blue)); }
+
+.service-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cyan);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.service-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+.service-body {
+  font-size: 12.5px;
+  color: #566080;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.service-tag {
+  display: inline-block;
+  background: var(--light);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+/* ── SCALE-UP TIMELINE ──────────────────────── */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px; top: 8px; bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--blue), var(--teal), var(--lime));
+  border-radius: 2px;
+}
+.tl-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+.tl-item:last-child { margin-bottom: 0; }
+.tl-dot {
+  position: absolute;
+  left: -34px;
+  top: 3px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--blue);
+}
+.tl-item:nth-child(1) .tl-dot { background: var(--blue); box-shadow: 0 0 0 2px var(--blue); }
+.tl-item:nth-child(2) .tl-dot { background: var(--cyan); box-shadow: 0 0 0 2px var(--cyan); }
+.tl-item:nth-child(3) .tl-dot { background: var(--teal); box-shadow: 0 0 0 2px var(--teal); }
+.tl-period {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--cyan);
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+.tl-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 7px;
+}
+.tl-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--navy);
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.tl-body {
+  font-size: 12.5px;
+  color: #566080;
+  line-height: 1.75;
+}
+.tl-body li {
+  list-style: none;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 4px;
+}
+.tl-body li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+/* ── PARTNER VALUE ─────────────────────────── */
+.value-block {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a3060 60%, #0a2040 100%);
+  border-radius: 20px;
+  padding: 40px 36px;
+  position: relative;
+  overflow: hidden;
+}
+.value-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 500px 300px at 80% 20%, rgba(0,166,166,0.15) 0%, transparent 60%);
+}
+.value-block-inner { position: relative; z-index: 1; }
+.value-block-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.value-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+.value-item {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 18px 16px;
+}
+.value-to {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--teal);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.value-text {
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.65;
+  font-weight: 400;
+}
+.value-text strong {
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* ── CTA ─────────────────────────────────── */
+.cta-section {
+  background: var(--white);
+  border-top: 1px solid #E2E8F5;
+}
+.cta-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.cta-text h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.cta-text p {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.7;
+  max-width: 420px;
+}
+.cta-info {
+  flex-shrink: 0;
+  text-align: right;
+}
+.cta-brand {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.cta-tagline {
+  font-size: 11px;
+  color: var(--cyan);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.cta-divider {
+  width: 1px;
+  height: 80px;
+  background: #E2E8F5;
+  flex-shrink: 0;
+}
+
+/* ── DIVIDER ─────────────────────────────── */
+.hr {
+  border: none;
+  border-top: 1px solid #E8EDF7;
+  margin: 0 60px;
+}
+
+/* ── HIGHLIGHT BOX ────────────────────────── */
+.highlight-box {
+  background: linear-gradient(135deg, rgba(0,166,166,0.07), rgba(166,217,106,0.07));
+  border: 1.5px solid rgba(0,166,166,0.2);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: var(--navy);
+  line-height: 1.7;
+  font-weight: 500;
+}
+.highlight-box em {
+  font-style: normal;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ① HERO -->
+<div class="hero">
+  <div class="hero-logo">BL</div>
+  <div class="hero-inner">
+    <div class="hero-badge">AC · VC 파트너 소개</div>
+    <h1>투자한 기업이 <em>살아남고</em>,<br>투자할 기업이 <em>계속 생겨납니다</em>.</h1>
+    <p class="hero-sub">
+      브릿지랩은 딥테크 스타트업이 데스밸리를 넘을 수 있도록 R&D 자금을 조달하고,<br>
+      AC/VC가 믿고 투자할 수 있는 검증된 딜을 지속적으로 공급하는<br>
+      딥테크 벤처 빌딩 에이전시입니다.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">15<span>~20억</span></div>
+        <div class="stat-label">포트폴리오사 1곳당 조달 가능 R&D 자금 규모</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3<span>대 세그먼트</span></div>
+        <div class="stat-label">출연(연)·대학·대형사업단 TLO · 딥테크 스타트업 · AC/CVC</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">대덕<span>특구</span></div>
+        <div class="stat-label">출연(연)·대학·대형사업단 밀집 거점 현장 접근성 확보</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ② 왜 AC/VC에게 필요한가 -->
+<div class="section">
+  <div class="section-label">Problem</div>
+  <div class="section-title">AC/VC가 반복적으로 직면하는 네 가지 문제</div>
+  <p class="section-desc">딥테크 투자 생태계에는 구조적인 공백이 있습니다. 브릿지랩은 이 공백을 메우기 위해 설계되었습니다.</p>
+
+  <div class="pain-grid">
+    <div class="pain-card">
+      <span class="pain-icon">🔍</span>
+      <div class="pain-title">투자할 만한 딥테크 딜이 시장에 부족합니다</div>
+      <div class="pain-desc">기술력은 좋지만 시장 언어·수익모델·R&D 로드맵이 미비한 팀이 너무 많습니다. 심사 단계에서 반복적으로 정체되는 딜 소싱 비용이 쌓입니다.</div>
+    </div>
+    <div class="pain-card">
+      <span class="pain-icon">📉</span>
+      <div class="pain-title">포트폴리오사가 데스밸리에서 소멸합니다</div>
+      <div class="pain-desc">시드 투자 이후 Series A 이전, 현금이 빠르게 소진됩니다. 정부 R&D 자금(팁스·초격차 등)을 활용할 수 있음에도, 기획 역량 부재로 손을 놓고 있습니다.</div>
+    </div>
+    <div class="pain-card">
+      <span class="pain-icon">🏛️</span>
+      <div class="pain-title">출연(연)·대학·대형사업단 기술·연구자 네트워크 접근이 어렵습니다</div>
+      <div class="pain-desc">딥테크 투자의 핵심 자산인 출연(연)·대학·대형사업단 원천기술과 연구자 네트워크를, 체계적으로 탐색하고 활용하는 경로가 사실상 없습니다.</div>
+    </div>
+    <div class="pain-card">
+      <span class="pain-icon">📋</span>
+      <div class="pain-title">팁스 운영사 평가가 포트폴리오 역량에 좌우됩니다</div>
+      <div class="pain-desc">추천 기업의 과제 수주 성공률이 운영사 평가에 직결되지만, 기업별 R&D 기획 역량 편차가 커 품질 관리가 구조적으로 어렵습니다.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<!-- ③ 브릿지랩이 메우는 공백 -->
+<div class="bridge-section">
+  <div class="bridge-inner">
+    <div class="bridge-headline">브릿지랩이 메우는 구조적 공백</div>
+    <p class="bridge-sub">출연(연)·대학·대형사업단 TLO와 AC/VC 사이, 아무도 채우지 않았던 자리</p>
+    <div class="flow-row">
+      <div class="flow-node">
+        <div class="flow-box">출연(연)·대학<br>대형사업단 TLO</div>
+        <div class="flow-label">원천기술 · 연구자</div>
+      </div>
+      <div class="flow-arrow">
+        <div style="display:flex;align-items:center">
+          <div class="arrow-line"></div>
+          <div class="arrow-tip"></div>
+        </div>
+        <div class="flow-arrow-label">기술·연구자 공급</div>
+      </div>
+      <div class="flow-node">
+        <div class="flow-box highlight">브릿지랩<br><span style="font-size:10px; font-weight:400; color:rgba(255,255,255,0.6)">기술 번역 · R&D 전략<br>딜플로우 설계</span></div>
+        <div class="flow-label">딥테크 벤처 빌딩 에이전시</div>
+      </div>
+      <div class="flow-arrow">
+        <div style="display:flex;align-items:center">
+          <div class="arrow-line"></div>
+          <div class="arrow-tip"></div>
+        </div>
+        <div class="flow-arrow-label">검증된 딜 공급</div>
+      </div>
+      <div class="flow-node">
+        <div class="flow-box">AC / VC<br>CVC</div>
+        <div class="flow-label">투자 · 팁스 운영</div>
+      </div>
+    </div>
+    <div style="margin-top: 32px; display:flex; justify-content:center;">
+      <div style="display:flex; gap:40px; flex-wrap:wrap; justify-content:center;">
+        <div style="text-align:center;">
+          <div style="font-size:11px; color:rgba(0,166,166,0.8); font-weight:700; letter-spacing:1px; margin-bottom:6px;">STEP 1</div>
+          <div style="font-size:12px; color:rgba(255,255,255,0.7);">포트폴리오사 R&D 자금 조달</div>
+        </div>
+        <div style="color:rgba(255,255,255,0.15); font-size:18px; line-height:2;">→</div>
+        <div style="text-align:center;">
+          <div style="font-size:11px; color:rgba(0,166,166,0.8); font-weight:700; letter-spacing:1px; margin-bottom:6px;">STEP 2</div>
+          <div style="font-size:12px; color:rgba(255,255,255,0.7);">Pre-AC 딥테크 팀 기획·공급</div>
+        </div>
+        <div style="color:rgba(255,255,255,0.15); font-size:18px; line-height:2;">→</div>
+        <div style="text-align:center;">
+          <div style="font-size:11px; color:rgba(0,166,166,0.8); font-weight:700; letter-spacing:1px; margin-bottom:6px;">STEP 3</div>
+          <div style="font-size:12px; color:rgba(255,255,255,0.7);">생태계 딜플로우 허브 구축</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ④ 브릿지랩의 서비스 -->
+<div class="section">
+  <div class="section-label">Solution</div>
+  <div class="section-title">AC/VC를 위한 네 가지 서비스</div>
+  <p class="section-desc">포트폴리오사가 살아남고, 투자 가능한 딥테크 팀이 꾸준히 공급될 수 있도록 브릿지랩이 실행합니다.</p>
+
+  <div class="highlight-box">
+    <em>핵심 메시지</em> — "AC/VC가 투자한 기업이 데스밸리를 넘을 수 있도록 R&D 자금 15~20억을 끌어오고,<br>투자 가능한 수준의 딥테크 팀을 지속적으로 기획·공급합니다."
+  </div>
+
+  <div class="service-grid">
+    <div class="service-card s1">
+      <div class="service-num">SERVICE 01</div>
+      <div class="service-title">포트폴리오사 R&D 자금 조달<br>— Non-dilutive Funding 파트너</div>
+      <div class="service-body">
+        AC/VC가 시드 투자한 포트폴리오사를 대상으로, 딥테크 팁스·초격차 스타트업 1000+·범부처 의료기기 사업 등 대형 정부 R&D 과제 수주를 대행·자문합니다.<br><br>
+        추가 지분 희석 없이 15~20억 원 규모의 R&D 자금을 데스밸리 구간에 집중 투입하여, 포트폴리오사의 생존율과 기업가치를 동시에 방어합니다.
+      </div>
+      <span class="service-tag">딥테크 팁스</span>
+      <span class="service-tag">초격차 1000+</span>
+      <span class="service-tag">범부처 의료기기</span>
+    </div>
+
+    <div class="service-card s2">
+      <div class="service-num">SERVICE 02</div>
+      <div class="service-title">팁스(TIPS) 과제 기획·수주 지원<br>— 운영사 포트폴리오 품질 관리</div>
+      <div class="service-body">
+        팁스 운영사 AC의 추천 기업을 대상으로 과제 기획·작성·제출 전 과정을 지원합니다. 출연(연)·대학·대형사업단 공동 연구 체계 연계, 연구자 매칭, 5년 R&D/R&BD 로드맵 설계를 패키지로 제공하여 팁스 심사 경쟁력을 구조적으로 높입니다.<br><br>
+        운영사 평가 지표와 직결되는 과제 수주 성과를 브릿지랩이 실행 수준에서 뒷받침합니다.
+      </div>
+      <span class="service-tag">팁스 과제 기획</span>
+      <span class="service-tag">R&BD 로드맵</span>
+      <span class="service-tag">출연(연)·대학·사업단 연구자 매칭</span>
+    </div>
+
+    <div class="service-card s3">
+      <div class="service-num">SERVICE 03</div>
+      <div class="service-title">검증된 딜플로우 공급<br>— Pre-AC 빌딩</div>
+      <div class="service-body">
+        출연(연)·대학·대형사업단 보유 기술 중 상용화 가능성이 높은 기술을 선별·큐레이션하여, 시장 분석·타겟 세그먼트·BM 구체화·R&D 로드맵까지 완료된 '검증된 딜'을 AC/VC에 공급합니다.<br><br>
+        브릿지랩이 기획한 팀은 기술·BM 검토가 완료되어 있어, AC는 투자 결정과 팁스 운영에 집중할 수 있습니다.
+      </div>
+      <span class="service-tag">기술 큐레이션</span>
+      <span class="service-tag">BM 설계</span>
+      <span class="service-tag">딜플로우 공급</span>
+    </div>
+
+    <div class="service-card s4">
+      <div class="service-num">SERVICE 04</div>
+      <div class="service-title">출연(연)·대학·대형사업단 기술·연구자 네트워크<br>접근 경로 제공</div>
+      <div class="service-body">
+        투자 심사 과정에서 필요한 기술 검증·전문가 자문을 출연(연)·대학·대형사업단 연구자 네트워크와 연결하여 제공합니다. 대덕특구 내 출연(연)·대학·대형사업단 밀집 거점 기반으로, 현장 접근성이 가져오는 기술 검증 신뢰도의 구조적 우위를 AC/VC에 제공합니다.<br><br>
+        CVC·중견기업의 오픈 이노베이션 수요와 출연(연)·대학·대형사업단 기술을 매칭하는 딜 소싱 경로도 제공합니다.
+      </div>
+      <span class="service-tag">기술 검증 자문</span>
+      <span class="service-tag">오픈 이노베이션</span>
+      <span class="service-tag">대덕특구 거점</span>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<!-- ⑤ 협력 구조 성장 단계 -->
+<div class="section">
+  <div class="section-label">Scale-up</div>
+  <div class="section-title">브릿지랩과의 협력이 성장하는 방식</div>
+  <p class="section-desc">단기 프로젝트로 시작해, 장기 딜플로우 파트너십으로 발전합니다. 브릿지랩의 역할이 확대될수록 AC/VC의 딜 소싱 비용과 포트폴리오 관리 부담이 함께 감소합니다.</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-period">0 ~ 6개월</div>
+      <div class="tl-title">1단계 — 포트폴리오사 생존율 제고로 신뢰 확보</div>
+      <div class="tl-role">▸ 브릿지랩의 역할: 전략적 R&D 자금 조달 우군</div>
+      <ul class="tl-body">
+        <li>AC 1~2곳의 포트폴리오사를 대상으로 정부 R&D 과제 기획·수주를 시범 수행합니다.</li>
+        <li>과제 수주 성공 → 기업가치 방어의 인과관계를 실증하여, 구조적 파트너십 수요를 만듭니다.</li>
+        <li>팁스·초격차 과제 수주로 포트폴리오사에 15~20억 규모 비희석 자금을 유입시킵니다.</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-period">6 ~ 18개월</div>
+      <div class="tl-title">2단계 — 딜플로우 공급 파트너로 역할 확장</div>
+      <div class="tl-role">▸ 브릿지랩의 역할: 믿고 투자할 수 있는 딜 소싱 파트너</div>
+      <ul class="tl-body">
+        <li>브릿지랩이 직접 기획한 Pre-AC 딥테크 팀을 AC에 공급하는 딜플로우 파트너십을 확립합니다.</li>
+        <li>팁스 운영사 AC와의 협력을 정례화하여, 과제 기획·수주 지원을 반복 가능한 구조로 정착시킵니다.</li>
+        <li>AC는 투자 결정과 팁스 운영에 집중하고, 브릿지랩이 딜 준비를 전담합니다.</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-period">18개월 이후</div>
+      <div class="tl-title">3단계 — 딥테크 투자 생태계 핵심 인프라</div>
+      <div class="tl-role">▸ 브릿지랩의 역할: 출연(연)·대학·사업단 TLO–스타트업–AC/CVC 연결 허브</div>
+      <ul class="tl-body">
+        <li>브릿지랩을 거친 팀의 팁스 선정·투자 유치 성과가 누적되어 '검증된 딜의 출처'로 자연 인식됩니다.</li>
+        <li>복수의 AC/VC와 정례적 딜플로우 파이프라인을 구축하고, 생태계 허브로 포지셔닝됩니다.</li>
+        <li>브릿지랩의 역할이 확대될수록 AC의 딜 소싱 비용과 포트폴리오 관리 부담이 동시에 감소하는 구조입니다.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="hr">
+
+<!-- ⑥ 파트너십 핵심 가치 -->
+<div class="section">
+  <div class="section-label">Partnership Value</div>
+  <div class="section-title">각 파트너에게 브릿지랩이 제공하는 가치</div>
+  <p class="section-desc" style="margin-bottom:24px;">브릿지랩은 AC/VC의 투자 수익률을 구조적으로 보호하고 확장하는 파트너입니다.</p>
+
+  <div class="value-block">
+    <div class="value-block-inner">
+      <div class="value-block-title">브릿지랩 파트너십의 핵심 가치</div>
+      <div class="value-row">
+        <div class="value-item">
+          <div class="value-to">AC에게</div>
+          <div class="value-text">
+            <strong>투자 수익률 보호 파트너</strong>
+            딜 소싱 비용을 낮추고 포트폴리오 생존율을 높여, 투자 수익률을 구조적으로 보호합니다.
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-to">VC · CVC에게</div>
+          <div class="value-text">
+            <strong>딜플로우 공급 파트너</strong>
+            R&D 로드맵이 완성된 투자 가능한 딥테크 딜을 지속적으로 공급합니다.
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-to">딥테크 스타트업에게</div>
+          <div class="value-text">
+            <strong>데스밸리 극복 설계자</strong>
+            AC 투자와 정부 R&D 자금을 동시에 연결하여 생존과 성장의 경로를 설계합니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑦ CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-text">
+      <h3>함께 딥테크 생태계를 만들어갑니다</h3>
+      <p>
+        브릿지랩은 대덕특구를 거점으로, 출연(연)·대학·대형사업단 TLO·딥테크 스타트업·AC/CVC 사이의 연결 공백을 채웁니다.
+        AC/VC의 포트폴리오사를 키우고, 투자할 만한 딥테크 팀을 지속적으로 공급하는 것이 브릿지랩의 역할입니다.
+      </p>
+    </div>
+    <div class="cta-divider"></div>
+    <div class="cta-info">
+      <div class="cta-brand">Bridgelab</div>
+      <div class="cta-tagline">R&D-to-Market Venture Studio</div>
+      <div style="margin-top:10px; font-size:11px; color:#8A96AF; line-height:1.6;">
+        딥테크 벤처 빌딩 에이전시<br>대전 대덕특구
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
