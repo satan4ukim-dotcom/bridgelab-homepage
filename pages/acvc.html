@@ -581,6 +581,64 @@ body {
   font-weight: 700;
 }
 
+
+/* ═══ 반응형: 태블릿 (≤900px) ═══ */
+@media (max-width: 900px) {
+  .hero { padding: 64px 40px 56px; }
+  .hero h1 { font-size: 34px; }
+  .hero-logo { font-size: 88px; }
+  .section { padding: 52px 40px; }
+  .bridge-inner { padding: 52px 40px; }
+  .cta-inner { padding: 48px 40px; }
+  .hr { margin: 0 40px; }
+}
+
+/* ═══ 반응형: 모바일 (≤640px) ═══ */
+@media (max-width: 640px) {
+  .hero { padding: 52px 22px 46px; }
+  .hero h1 { font-size: 28px; }
+  .hero h1 br { display: none; }
+  .hero-sub { font-size: 14.5px; margin-bottom: 32px; }
+  .hero-sub br { display: none; }
+  .hero-logo { font-size: 60px; top: 18px; transform: none; }
+  .hero-stats { gap: 22px; }
+
+  .section { padding: 44px 22px; }
+  .section-title { font-size: 22px; }
+  .section-desc br { display: none; }
+
+  .pain-grid { grid-template-columns: 1fr; }
+  .service-grid { grid-template-columns: 1fr; }
+  .value-row { grid-template-columns: 1fr; }
+
+  .bridge-inner { padding: 44px 22px; }
+
+  .flow-row { flex-direction: column; gap: 0; }
+  .flow-node { width: 100%; }
+  .flow-box, .flow-box.highlight { width: 100%; min-width: 0; }
+  .flow-arrow { padding: 12px 0; }
+  .flow-arrow > div:first-child { transform: rotate(90deg); }
+  .flow-arrow-label { margin-top: 6px; }
+
+  .value-block { padding: 32px 22px; }
+  .value-block-title { font-size: 18px; }
+
+  .cta-inner { flex-direction: column; align-items: flex-start; gap: 24px; padding: 44px 22px; text-align: left; }
+  .cta-divider { display: none; }
+  .cta-info { text-align: left; }
+
+  .hr { margin: 0 22px; }
+  .highlight-box br { display: none; }
+}
+
+/* ═══ 반응형: 소형 휴대폰 (≤400px) ═══ */
+@media (max-width: 400px) {
+  .hero h1 { font-size: 25px; }
+  .hero-stats { flex-direction: column; gap: 16px; }
+  .section { padding: 40px 18px; }
+  .hero { padding: 48px 18px 42px; }
+}
+
 </style>
 </head>
 <body>

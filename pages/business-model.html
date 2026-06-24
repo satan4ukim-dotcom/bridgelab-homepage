@@ -147,6 +147,46 @@
     .page::before, .side-nav { display:none; }
     p { font-size:18px; }
   }
+
+/* ═══ 반응형: 태블릿 가로 오버플로우 방지 (≤920px) ═══ */
+@media (max-width: 920px) {
+  .spread-title { width: auto; max-width: 100%; padding: 0 24px; }
+}
+
+/* ═══ 반응형: 모바일 (≤600px) ═══ */
+@media (max-width: 600px) {
+  .book { padding: 14px 0 40px; }
+  .page {
+    width: 100%; padding: 40px 20px 56px; margin: 0 auto 24px;
+  }
+  .spread-title { padding: 0 20px; font-size: 11px; }
+  .chapter-band { padding: 22px 18px 24px; margin-bottom: 36px; }
+  .chap-top { gap: 12px; margin-bottom: 24px; }
+  .chap-num { font-size: 28px; }
+  h1 { font-size: 28px; letter-spacing: -.03em; }
+  h1 .en { font-size: 14px; margin-left: 6px; }
+  .lead { font-size: 16.5px; line-height: 1.75; margin-bottom: 18px; }
+  p { font-size: 16px; line-height: 1.9; }
+  .body-small p { font-size: 14.5px; }
+  .section { margin-bottom: 36px; }
+  .section-title { gap: 12px; }
+  .section-title h2 { font-size: 18px; }
+  .section-title .num { font-size: 18px; }
+  .pullquote { font-size: 16px; line-height: 1.7; padding: 16px 18px; margin: 20px 0 26px; }
+  .mini-grid { grid-template-columns: 1fr; gap: 12px; margin: 18px 0 28px; }
+  .diagram-wrap { padding: 14px 10px; margin-bottom: 32px; }
+  .logo-mark { left: 20px; bottom: 22px; }
+  .page-no { right: 20px; bottom: 20px; }
+}
+
+/* ═══ 반응형: 소형 휴대폰 (≤390px) ═══ */
+@media (max-width: 390px) {
+  .page { padding: 34px 16px 48px; }
+  h1 { font-size: 25px; }
+  .lead { font-size: 15.5px; }
+  p { font-size: 15.5px; }
+}
+
 </style>
 </head>
 <body>
