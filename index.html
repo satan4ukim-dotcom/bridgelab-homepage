@@ -992,6 +992,30 @@
             .gov-card h2 { font-size: 26px; }
             .gov-features { grid-template-columns: 1fr; }
         }
+
+        /* 정부지원사업 검토 문서 배너 */
+        .rep-section {
+            background: linear-gradient(135deg, #0A1F3D 0%, #163E73 58%, #2D5FA6 100%);
+            color: white;
+        }
+
+        .rep-cta {
+            display: inline-block;
+            background: #ffffff;
+            color: #0A1F3D;
+            padding: 15px 42px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .rep-cta:hover {
+            background: #DCE7F6;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+        }
     </style>
 </head>
 <body>
@@ -1011,6 +1035,7 @@
                 <nav id="mainNav">
                     <a href="#services">서비스</a>
                     <a href="#gov-support">정부지원사업</a>
+                    <a href="#gov-reports">검토 문서</a>
                     <a href="#business-model">비즈니스 모델</a>
                     <a href="#process">프로세스</a>
                     <a href="#capabilities">역량</a>
@@ -1150,6 +1175,28 @@
                 </div>
                 <a href="https://gov.bridgelab.co.kr" target="_blank" rel="noopener" class="gov-cta">정부지원사업 모니터링 바로가기 →</a>
                 <span class="gov-url">gov.bridgelab.co.kr</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 정부지원사업 검토 문서 -->
+    <section id="gov-reports" class="rep-section">
+        <div class="container">
+            <div class="gov-card">
+                <span class="gov-badge">📑 NEW · 검토 문서 2종</span>
+                <h2>정부지원사업 검토 문서</h2>
+                <p>
+                    지원사업 목록이 아니라, 우리 회사가 지금 낼 수 있는지에 대한 판정입니다.<br>
+                    신청 자격을 실제로 충족하는지, 이미 선정된 기업들과 견주어 승산이 있는지를<br>
+                    실측 자료로 확인하여 문서로 제출합니다.
+                </p>
+                <div class="gov-features">
+                    <div>📘 활용기회 검토보고서 · 1~2년 검토</div>
+                    <div>📗 5개년 활용계획 · 과제 16건 설계</div>
+                    <div>📄 두 문서 모두 샘플 전문 공개</div>
+                </div>
+                <a href="reports/" class="rep-cta">검토 문서 살펴보기 →</a>
+                <span class="gov-url">bridgelab.co.kr/reports</span>
             </div>
         </div>
     </section>
@@ -1371,7 +1418,8 @@
                 <a href="mailto:yongman@bridgelab.co.kr" class="footer-link">이메일</a> |
                 <a href="tel:01029608750" class="footer-link">전화</a> |
                 <a href="#services" class="footer-link">서비스</a> |
-                <a href="https://gov.bridgelab.co.kr" target="_blank" rel="noopener" class="footer-link">정부지원사업 모니터링</a>
+                <a href="https://gov.bridgelab.co.kr" target="_blank" rel="noopener" class="footer-link">정부지원사업 모니터링</a> |
+                <a href="reports/" class="footer-link">정부지원사업 검토 문서</a>
             </div>
             <p style="margin-top: 20px; font-size: 12px; opacity: 0.8;">© 2026 Bridgelab. All rights reserved.</p>
         </div>
