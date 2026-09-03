@@ -160,6 +160,13 @@ td b{color:var(--ink);font-weight:600}
 .btn-outline{background:transparent;color:#DCE7F6;border:1px solid rgba(160,190,230,.45)}
 .btn-outline:hover{background:rgba(255,255,255,.08);color:#FFFFFF;border-color:#7CA6D8}
 .status{font-size:13px;color:#8FB3DE;font-family:var(--mono);min-height:1.2em}
+.gform{margin-top:30px;max-width:820px;background:#FFFFFF;border:1px solid rgba(160,190,230,.30)}
+.gform iframe{display:block;width:100%;border:0;height:1980px}
+@media (max-width:860px){.gform iframe{height:2160px}}
+@media (max-width:560px){.gform iframe{height:2420px}}
+.intake .lead a{color:#DCE7F6;text-decoration:none;border-bottom:1px solid rgba(160,190,230,.45)}
+.intake .lead a:hover{color:#FFFFFF;border-bottom-color:#FFFFFF}
+a.btn{display:inline-block;text-decoration:none;line-height:1.5}
 .direct{margin-top:34px;padding-top:24px;border-top:1px solid rgba(160,190,230,.22);display:flex;gap:44px;flex-wrap:wrap;font-size:13.5px}
 .direct div span{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:#6B82A6;text-transform:uppercase;margin-bottom:5px}
 .direct a{color:#DCE7F6;text-decoration:none;border-bottom:1px solid rgba(160,190,230,.4)}
@@ -566,7 +573,7 @@ footer .note{max-width:52em;line-height:1.75}
     <div class="step">
       <div class="n">STEP 01</div>
       <h3>검토 신청</h3>
-      <p>아래 항목을 채워 보내주시면 전자우편으로 접수됩니다. 회신으로 진행 절차와 비용을 안내드립니다.</p>
+      <p>아래 신청서를 작성하여 보내주시면 접수됩니다. 회신으로 진행 절차와 비용을 안내드립니다.</p>
       <div class="when">회신 1영업일 이내</div>
     </div>
     <div class="step">
@@ -593,38 +600,14 @@ footer .note{max-width:52em;line-height:1.75}
 <section class="intake" id="intake">
   <div class="wrap">
     <div class="eyebrow">검토 신청</div>
-    <h2>아래 항목을 채우시면 신청 메일이 만들어집니다</h2>
+    <h2>아래 신청서를 작성하여 보내주십시오</h2>
     <p class="lead">
-      작성하신 내용은 이 페이지에 저장되지 않습니다. 「신청 메일 작성」을 누르면 메일 프로그램이 열리고,
-      「내용 복사」를 누르면 정리된 본문이 복사되므로 편하신 방법으로 보내주시면 됩니다.
-      회신으로 진행 절차와 비용, 제출 자료 목록을 안내드립니다.
+      작성해 주신 내용은 브릿지랩 접수 대장으로 바로 전달됩니다. 보내주신 뒤 1영업일 이내에 진행 절차와 비용,
+      제출 자료 목록을 회신드립니다. 신청서가 보이지 않으면
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkcuHvkktirhzCGdS8jalukBIsEavJQl_wFnUHwMgbEs32bg/viewform" target="_blank" rel="noopener">새 창에서 여실 수 있습니다</a>.
     </p>
-    <div class="form">
-      <div class="field"><label for="f-company">기업명</label><input id="f-company" type="text" placeholder="주식회사 ○○"></div>
-      <div class="field"><label for="f-name">담당자 성함·직위</label><input id="f-name" type="text" placeholder="홍길동 대표이사"></div>
-      <div class="field"><label for="f-mail">회신받을 전자우편</label><input id="f-mail" type="email" placeholder="name@company.co.kr"></div>
-      <div class="field"><label for="f-tel">연락처</label><input id="f-tel" type="tel" placeholder="010-0000-0000"></div>
-      <div class="field"><label for="f-item">희망 문서</label>
-        <select id="f-item">
-          <option>활용기회 검토보고서 (LV1)</option>
-          <option>5개년 활용계획 (LV2)</option>
-          <option>상담 후 결정</option>
-        </select>
-      </div>
-      <div class="field"><label for="f-hist">정부 R&amp;D 수행 이력</label>
-        <select id="f-hist">
-          <option>있음</option>
-          <option>없음</option>
-          <option>확인 필요</option>
-        </select>
-      </div>
-      <div class="field full"><label for="f-biz">사업 분야 한 줄 소개</label><input id="f-biz" type="text" placeholder="예: 반도체 첨단 패키징용 열관리 소재 개발"></div>
-      <div class="field full"><label for="f-memo">문의 사항 (선택)</label><textarea id="f-memo" placeholder="검토 시점, 예정 중인 신청 사업, 그 밖에 알려주실 사항"></textarea></div>
-    </div>
-    <div class="actions">
-      <button class="btn btn-light" id="btn-mail">신청 메일 작성</button>
-      <button class="btn btn-outline" id="btn-copy">내용 복사</button>
-      <span class="status" id="status"></span>
+    <div class="gform">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdkcuHvkktirhzCGdS8jalukBIsEavJQl_wFnUHwMgbEs32bg/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0" loading="lazy" title="브릿지랩 정부지원사업 검토 신청서">신청서를 불러오는 중입니다…</iframe>
     </div>
     <div class="direct">
       <div><span>전자우편</span><a href="mailto:yongman@bridgelab.co.kr">yongman@bridgelab.co.kr</a></div>
@@ -666,54 +649,7 @@ footer .note{max-width:52em;line-height:1.75}
 })();
 
 (function(){
-  // ── 신청 메일 조립 ──
-  function val(id){ var e = document.getElementById(id); return (e.value || "").trim(); }
-  function compose(){
-    var L = [
-      "브릿지랩 정부지원사업 검토를 신청합니다.",
-      "",
-      "기업명: " + (val("f-company") || "(미기재)"),
-      "담당자: " + (val("f-name") || "(미기재)"),
-      "전자우편: " + (val("f-mail") || "(미기재)"),
-      "연락처: " + (val("f-tel") || "(미기재)"),
-      "희망 문서: " + document.getElementById("f-item").value,
-      "정부 R&D 수행 이력: " + document.getElementById("f-hist").value,
-      "사업 분야: " + (val("f-biz") || "(미기재)")
-    ];
-    var memo = val("f-memo");
-    if (memo) { L.push("", "문의 사항", memo); }
-    L.push("", "진행 절차와 비용을 회신하여 주시기 바랍니다.");
-    return L.join("\n");
-  }
-  function subject(){
-    var c = val("f-company");
-    return "[검토 신청] " + (c ? c + " · " : "") + document.getElementById("f-item").value;
-  }
-  var status = document.getElementById("status");
-  function say(t){ status.textContent = t; setTimeout(function(){ if (status.textContent === t) status.textContent = ""; }, 4000); }
-
-  document.getElementById("btn-mail").addEventListener("click", function(){
-    window.location.href = "mailto:yongman@bridgelab.co.kr?subject=" +
-      encodeURIComponent(subject()) + "&body=" + encodeURIComponent(compose());
-    say("메일 프로그램이 열리지 않으면 「내용 복사」를 이용해 주십시오.");
-  });
-
-  document.getElementById("btn-copy").addEventListener("click", function(){
-    var text = "받는 사람: yongman@bridgelab.co.kr\n제목: " + subject() + "\n\n" + compose();
-    var done = function(){ say("복사했습니다. 전자우편에 붙여 넣어 보내주십시오."); };
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(done, function(){ legacy(text, done); });
-    } else { legacy(text, done); }
-  });
-  function legacy(text, done){
-    var ta = document.createElement("textarea");
-    ta.value = text; ta.setAttribute("readonly", "");
-    ta.style.position = "fixed"; ta.style.opacity = "0";
-    document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); done(); }
-    catch (e) { say("복사하지 못했습니다. yongman@bridgelab.co.kr 로 보내주십시오."); }
-    document.body.removeChild(ta);
-  }
+  // ── 신청 접수는 구글 폼이 담당하므로 이 페이지에는 폼 코드가 없다 ──
 })();
 </script>
 
