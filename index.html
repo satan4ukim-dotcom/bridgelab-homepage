@@ -3,439 +3,300 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>브릿지랩 | 기술과 기업을 연결하고 함께 추진할 과제를 설계합니다</title>
-<meta name="description" content="브릿지랩은 딥테크 성장전략·기술사업화 전문회사입니다. 기업·공공기술·R&amp;D·특허 정보를 사업화 경험으로 해석해 스타트업, AC·VC, 대학·출연연이 필요한 기술과 파트너를 찾고 실행계획을 세우도록 지원합니다.">
+<title>브릿지랩 | 기술과 기업 사이, 다음 과제를 설계합니다</title>
+<meta name="description" content="브릿지랩은 딥테크 성장전략·기술사업화 전문회사입니다. 스타트업, AC·VC, 대학·출연연이 필요한 기술과 파트너를 찾고, 정부 R&amp;D·투자 준비로 이어지는 실행계획을 세우도록 지원합니다.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="브릿지랩 (Bridgelab)">
-<meta property="og:title" content="브릿지랩 | 기술과 기업을 연결하고 함께 추진할 과제를 설계합니다">
-<meta property="og:description" content="브릿지랩은 딥테크 성장전략·기술사업화 전문회사입니다. 기업·공공기술·R&amp;D·특허 정보를 사업화 경험으로 해석해 스타트업, AC·VC, 대학·출연연이 필요한 기술과 파트너를 찾고 실행계획을 세우도록 지원합니다.">
+<meta property="og:title" content="브릿지랩 | 기술과 기업 사이, 다음 과제를 설계합니다">
+<meta property="og:description" content="브릿지랩은 딥테크 성장전략·기술사업화 전문회사입니다. 스타트업, AC·VC, 대학·출연연이 필요한 기술과 파트너를 찾고, 정부 R&amp;D·투자 준비로 이어지는 실행계획을 세우도록 지원합니다.">
 <meta property="og:url" content="https://www.bridgelab.co.kr/">
 <link rel="canonical" href="https://www.bridgelab.co.kr/">
 <link rel="icon" href="assets/symbol.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0B1D3A">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/site.css">
-<script src="assets/site.js"></script>
+<link rel="stylesheet" href="assets/base-v4.css">
+<link rel="stylesheet" href="assets/home.css">
+<script src="assets/home.js"></script>
 </head>
 <body>
-<a class="skip-link" href="#main">본문으로 건너뛰기</a>
-<header class="site-header">
-<div class="container site-header__in">
-<a class="brand" href="index.html" aria-label="브릿지랩 홈"><img src="assets/symbol.svg" alt="" width="41" height="28"><span class="brand__word">BRIDGELAB</span></a>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="hd">
+<div class="wrap hd__in">
+<a class="brand" href="index.html" aria-label="브릿지랩 홈"><img src="assets/symbol.svg" alt="" width="36" height="25">BRIDGELAB</a>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">메뉴</button>
-<nav class="site-nav" id="site-nav" aria-label="주 메뉴">
+<nav class="nav" id="site-nav" aria-label="주 메뉴">
 <ul>
-<li><a href="#customers">고객별 서비스</a></li>
-<li><a href="#data">데이터·분석 기반</a></li>
-<li><a href="#cases">수행 사례</a></li>
-<li><a href="#resources">자료·인사이트</a></li>
+<li><a href="#customers">서비스</a></li>
+<li><a href="#process">진행 방식</a></li>
+<li><a href="#data">근거</a></li>
+<li><a href="#cases">사례</a></li>
+<li><a href="#resources">자료</a></li>
 <li><a href="about/index.html">브릿지랩</a></li>
-<li><a class="btn btn--sm" href="#contact">현안 상담</a></li>
+<li><a class="cta" href="#contact">현안 상담</a></li>
 </ul>
 </nav>
 </div>
 </header>
 
 <main id="main" tabindex="-1">
-<section class="hero" id="top" aria-label="첫 화면">
-<div class="hero-bg" aria-hidden="true"><img src="assets/img/hero-field.png" alt="" loading="lazy" decoding="async" onerror="this.hidden=true"></div>
-<div class="container hero__grid">
-<div class="hero__left">
-<p class="label">딥테크 성장전략·기술사업화</p>
-<h1>기술과 기업을 연결하고,<br>함께 추진할 과제를 설계합니다.</h1>
-<p class="hero__text">기업·공공기술·R&amp;D·특허 정보를 현장의 사업화 경험으로 해석합니다. 스타트업, AC·VC, 대학·출연연이 필요한 기술과 파트너를 찾고, 컨소시엄·정부 R&amp;D·투자 준비로 이어지는 실행계획을 세울 수 있도록 지원합니다.</p>
+
+<!-- 1. 첫 화면 -->
+<section class="hero dark" id="top" aria-label="첫 화면">
+<div class="hero__glow" aria-hidden="true"></div>
+<div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+<div class="wrap hero__grid">
+<div>
+<p class="eyebrow">Deep-tech growth · Tech commercialization · Daejeon</p>
+<h1 class="h-display">기술과 기업 사이,<br><span class="ul">다음 과제</span>를<br>설계합니다.</h1>
+<p class="lead">스타트업, AC·VC, 대학·출연연이 필요한 기술과 파트너를 찾고, 정부 R&amp;D·투자 준비로 이어지는 실행계획을 세우도록 돕습니다.</p>
 <div class="btns">
-<a class="btn" href="#customers">고객별 서비스 보기</a>
-<a class="btn btn--ghost" href="#contact">우리 현안 상담하기</a>
+<a class="btn" href="#customers">무엇을 하는지 보기 <span class="arr" aria-hidden="true">↓</span></a>
+<a class="btn btn--ghost" href="#contact">현안 상담하기 <span class="arr" aria-hidden="true">→</span></a>
 </div>
-<ul class="core3" aria-label="핵심 업무">
-<li><strong>기술·기업 탐색</strong><span>공공기술·협력기관·활용기업 후보를 검토합니다.</span></li>
-<li><strong>팀·과제 기획</strong><span>컨소시엄의 역할과 과제 목표·검증 계획을 정리합니다.</span></li>
-<li><strong>사업화·성장계획</strong><span>정부지원사업·자금·투자 준비의 순서를 설계합니다.</span></li>
+</div>
+<ul class="qs" aria-label="세 고객의 질문">
+<li><a class="q" href="#c-startup"><span class="q__n">01</span><span><span class="q__who">STARTUP</span><span class="q__t">우리 제품에 필요한 기술은 어디에 있는가</span></span><span class="q__arr" aria-hidden="true">→</span></a></li>
+<li><a class="q" href="#c-investor"><span class="q__n">02</span><span><span class="q__who">AC · VC</span><span class="q__t">기업마다 다른 성장 과제를 어떻게 지원할까</span></span><span class="q__arr" aria-hidden="true">→</span></a></li>
+<li><a class="q" href="#c-research"><span class="q__n">03</span><span><span class="q__who">UNIV · GRI · TLO</span><span class="q__t">우리 기술을 활용할 기업은 누구인가</span></span><span class="q__arr" aria-hidden="true">→</span></a></li>
 </ul>
 </div>
-<figure class="dg" aria-labelledby="dg-cap">
-<div class="dg__cols">
-<div class="dg__col">
-<p class="dg__label">세 고객의 질문</p>
-<ul class="dg__list">
-<li class="dg__item dg__item--q"><b>스타트업</b><span>우리 제품에 필요한 기술은 어디에 있는가</span><i aria-hidden="true"></i></li>
-<li class="dg__item dg__item--q"><b>AC·VC</b><span>기업마다 다른 성장 과제를 어떻게 지원할까</span><i aria-hidden="true"></i></li>
-<li class="dg__item dg__item--q"><b>대학·출연연·TLO</b><span>우리 기술을 활용할 기업은 누구인가</span><i aria-hidden="true"></i></li>
-</ul>
-</div>
-<div class="dg__col dg__col--c">
-<p class="dg__label">공통 검토</p>
-<div class="dg__core">
-<strong>기업·기술·R&amp;D·특허 교차 검토</strong>
-<ul><li>기업 정보</li><li>공공기술</li><li>국가 R&amp;D 이력</li><li>관련 특허</li></ul>
-</div>
-</div>
-<div class="dg__col">
-<p class="dg__label">결과</p>
-<ul class="dg__list">
-<li class="dg__item dg__item--r"><i aria-hidden="true"></i><b>후보</b><span>검토할 기술·기업·협력기관</span></li>
-<li class="dg__item dg__item--r"><i aria-hidden="true"></i><b>근거</b><span>선정 이유와 남은 확인 사항</span></li>
-<li class="dg__item dg__item--r"><i aria-hidden="true"></i><b>협력안</b><span>역할·과제·실행 순서</span></li>
-</ul>
-</div>
-</div>
-<figcaption id="dg-cap">세 고객의 질문을 같은 정보 기반에서 교차 검토해 후보·근거·협력안으로 정리합니다.</figcaption>
-</figure>
+<div class="hero__foot" aria-hidden="true">
+<div class="marquee"><div class="marquee__track">
+<div class="marquee__set"><span>공공기술 탐색</span><span>활용기업 발굴</span><span>컨소시엄 기획</span><span>정부 R&amp;D 신청 준비</span><span>5개년 활용계획</span><span>과제카드</span><span>투자 준비도 검토</span><span>기술 후보표</span></div>
+<div class="marquee__set"><span>공공기술 탐색</span><span>활용기업 발굴</span><span>컨소시엄 기획</span><span>정부 R&amp;D 신청 준비</span><span>5개년 활용계획</span><span>과제카드</span><span>투자 준비도 검토</span><span>기술 후보표</span></div>
+</div></div>
 </div>
 </section>
 
+<!-- 2. 고객별 서비스 -->
 <section class="sec" id="customers" aria-labelledby="customers-h">
-<div class="container">
-<div class="slot slot--band" aria-hidden="true"><span class="slot__lbl"><b>스타트업</b><b>AC·VC</b><b>대학·출연연·TLO</b></span></div>
-<h2 id="customers-h">세 고객의 현안에서 시작합니다</h2>
-<div class="cust">
-<article class="cust__item">
-<h3>스타트업</h3>
-<p class="cust__q">필요한 기술과 자금, 함께할 파트너를 찾고 있습니까?</p>
-<p class="cust__d">제품을 고도화할 공공기술과 협력기관을 검토하고, 정부 R&amp;D·실증·투자 준비의 순서를 정리합니다. 기업의 사업과 개발 목표를 실제로 추진할 과제와 성장계획으로 구체화합니다.</p>
-<ul class="cust__list"><li>공공기술·연구기관 후보 검토</li><li>정부지원사업 활용과 5개년 계획</li><li>컨소시엄·과제 기획</li><li>사업모델·IR 보완과 투자 준비</li></ul>
-<p class="cust__out"><span class="label label--muted">대표 결과물</span><strong>기술 후보표 · 과제기획안 · 성장 로드맵</strong></p>
-<a class="cust__link tlink" href="solutions/startups/index.html">스타트업 서비스 보기</a>
-</article>
-<article class="cust__item">
-<h3>AC·VC</h3>
-<p class="cust__q">포트폴리오 기업마다 다른 기술·R&amp;D 과제를 어떻게 지원할까요?</p>
-<p class="cust__d">보육·투자기업의 현황과 기술로드맵을 확인하고, 활용할 지원사업·공공기술·협력기관을 검토합니다. 기업별 실행계획을 정리해 프로그램의 지원 우선순위와 후속 과업을 구체화합니다.</p>
-<ul class="cust__list"><li>보육·투자기업의 기술·R&amp;D 현황 진단</li><li>정부지원사업 활용 검토와 5개년 신청계획</li><li>공공기술·연구인력·컨소시엄 후보 검토</li><li>후속 과제기획과 실무교육 구성</li></ul>
-<p class="cust__out"><span class="label label--muted">대표 결과물</span><strong>기업별 통합 검토보고서 · 지원 우선순위 · 후속 과제안</strong></p>
-<a class="cust__link tlink" href="solutions/investors/index.html">포트폴리오 지원 구성 보기</a>
-</article>
-<article class="cust__item">
-<h3>대학·출연연·TLO</h3>
-<p class="cust__q">우리 기술을 활용할 기업, 기존 접점 밖에서도 찾고 있습니까?</p>
-<p class="cust__d">기술의 적용 분야와 기업의 사업·개발 방향을 함께 살펴 활용 후보기업을 찾습니다. 스타트업부터 관련 산업의 기업까지 탐색 범위를 넓히고, 기업별 제안 근거와 후속 협력 과제를 정리합니다.</p>
-<ul class="cust__list"><li>기술 활용 후보기업 발굴</li><li>기업별 제안 논리·SMK 구성</li><li>산학연 컨소시엄·후속사업 기획</li><li>연구원창업 지원 구조와 기관 실무교육</li></ul>
-<p class="cust__out"><span class="label label--muted">대표 결과물</span><strong>활용 후보기업표 · 기술 제안자료 · 협력 구성안</strong></p>
-<a class="cust__link tlink" href="solutions/research/index.html">공공기술 사업화 서비스 보기</a>
-</article>
-</div>
-<figure class="fg fl fl--who">
-<p class="fg__title">고객별로 가진 것과 필요한 것</p>
-<div class="fl__head" aria-hidden="true"><span></span><span>가진 것</span><span>필요한 것</span><span>받는 결과물</span></div>
-<ul class="fl__rows">
-<li class="fl__row"><b class="fl__who">스타트업</b><div class="fl__c"><span class="fl__k">가진 것</span><span class="fl__t">제품·사업모델·개발 목표</span></div><div class="fl__c"><span class="fl__k">필요한 것</span><span class="fl__t">부족한 기술, 협력 연구자, 후속 개발 자금</span></div><div class="fl__c"><span class="fl__k">받는 결과물</span><span class="fl__t">기술 후보표, 협력 경로, 과제·자금 활용계획</span></div></li>
-<li class="fl__row"><b class="fl__who">AC·VC</b><div class="fl__c"><span class="fl__k">가진 것</span><span class="fl__t">보육·투자기업과 성장 지원 과제</span></div><div class="fl__c"><span class="fl__k">필요한 것</span><span class="fl__t">기업별 기술·R&amp;D 지원 우선순위</span></div><div class="fl__c"><span class="fl__k">받는 결과물</span><span class="fl__t">기업별 진단표, 지원 우선순위, 심화 검토 대상</span></div></li>
-<li class="fl__row"><b class="fl__who">대학·출연연·TLO</b><div class="fl__c"><span class="fl__k">가진 것</span><span class="fl__t">특허·기술·연구성과</span></div><div class="fl__c"><span class="fl__k">필요한 것</span><span class="fl__t">활용할 기업, 제안 논리, 후속 사업화 경로</span></div><div class="fl__c"><span class="fl__k">받는 결과물</span><span class="fl__t">활용 후보기업 목록, 선정 근거, 협력·후속 과제안</span></div></li>
-</ul>
-<figcaption>고객마다 출발점과 필요한 것이 달라 결과물도 다르게 구성합니다.</figcaption>
-</figure>
-<p class="cust__note">목록을 전달하는 데서 끝나지 않고, 왜 이 후보인지, 무엇을 더 확인해야 하는지, 어떤 협력으로 이어갈지를 함께 정리합니다.</p>
-</div>
-</section>
-
-<section class="sec" id="data" aria-labelledby="data-h">
-<div class="container">
-<div class="data__top">
+<div class="wrap">
+<div class="sec__head rv">
 <div>
-<h2 id="data-h">기업 정보와 공공기술을 함께 봅니다</h2>
-<p class="data__sub">어떤 기술인가에 더해, 어느 기업의 어떤 과제에 필요한지 검토합니다.</p>
-<p>브릿지랩은 AC·VC의 보육·포트폴리오 기업을 포함한 기업 정보와 대학·출연연의 공개 기술을 축적하고 있습니다. 여기에 국가 R&amp;D 수행 이력과 관련 특허 정보를 대조해 후보를 찾고, 확인한 기업의 사업 방향과 협력 현안을 분석에 반영합니다.</p>
+<p class="eyebrow">01 — 누구의 현안을 다루나</p>
+<h2 class="h-sec" id="customers-h">세 고객, <em>세 가지 질문</em>에서<br>시작합니다.</h2>
 </div>
-<div class="data__stats">
-<div class="stat"><span class="label">기업 정보</span><span class="stat__num">1,600여 건</span><p class="stat__note">2026.10.08 기준. 분석에 활용하는 기업 정보의 규모이며 고객 수나 제휴기업 수가 아닙니다.</p></div>
-<div class="stat"><span class="label">공공기술 정보</span><span class="stat__num">2만여 건 · 26개 기관</span><p class="stat__note">2026.10.08 기준. 대학·출연연이 공개한 기술 정보의 등재 건수이며 브릿지랩 소유 기술이나 중복을 제외한 원천기술 수가 아닙니다.</p></div>
+<p class="lead">출발점이 다르면 결과물도 다릅니다. 고객마다 가진 것과 필요한 것을 확인하고, 후보·근거·협력안으로 정리합니다.</p>
 </div>
-</div>
-<figure class="fg">
-<p class="fg__title">정보원 교차 매트릭스</p>
-<table class="xm">
-<thead><tr><th scope="col">정보원</th><th scope="col">스타트업의 기술 후보</th><th scope="col">AC·VC의 기업별 지원</th><th scope="col">연구기관의 활용기업</th></tr></thead>
-<tbody>
-<tr><th scope="row">기업 정보</th><td><span aria-hidden="true">○</span><span class="visually-hidden">보조로 참고</span></td><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td></tr>
-<tr><th scope="row">공공기술 정보</th><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">○</span><span class="visually-hidden">보조로 참고</span></td></tr>
-<tr><th scope="row">국가 R&amp;D 이력</th><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td></tr>
-<tr><th scope="row">관련 특허 정보</th><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">○</span><span class="visually-hidden">보조로 참고</span></td><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td></tr>
-<tr><th scope="row">지원사업·투자 정보</th><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">●</span><span class="visually-hidden">주로 대조</span></td><td><span aria-hidden="true">○</span><span class="visually-hidden">보조로 참고</span></td></tr>
-</tbody>
-</table>
-<p class="fg__legend"><span><span aria-hidden="true">●</span>주로 대조</span><span><span aria-hidden="true">○</span>보조로 참고</span></p>
-<figcaption>고객의 질문에 따라 같은 정보원을 다른 비중으로 대조합니다.</figcaption>
-</figure>
-<h3 class="subh">분석 기반과 해석 기준</h3>
-<table class="tbl">
-<thead><tr><th scope="col">분석 기반</th><th scope="col">검토하는 내용</th><th scope="col">해석할 때 구분하는 점</th></tr></thead>
-<tbody>
-<tr><th scope="row" class="k">기업 정보</th><td data-label="검토하는 내용">제품·사업모델·성장단계·기술 방향</td><td data-label="해석할 때 구분하는 점">기업 정보가 있다는 것과 현재 도입 의향이 있다는 것은 별개로 확인합니다.</td></tr>
-<tr><th scope="row" class="k">공공기술 정보</th><td data-label="검토하는 내용">적용 분야·보유기관·특허·기술소개자료</td><td data-label="해석할 때 구분하는 점">공개 등재 기술이 지금 이전 가능한지는 보유기관과 확인합니다.</td></tr>
-<tr><th scope="row" class="k">국가 R&amp;D 이력</th><td data-label="검토하는 내용">관련 기업·연구기관의 수행 경험과 협력 이력</td><td data-label="해석할 때 구분하는 점">과거 수행 이력은 현재 참여 여력과 따로 봅니다.</td></tr>
-<tr><th scope="row" class="k">관련 특허 정보</th><td data-label="검토하는 내용">기업의 기술 접점과 연관 분야</td><td data-label="해석할 때 구분하는 점">특허 보유기업은 도입 후보일 수도, 자체 개발·경쟁 기업일 수도 있습니다.</td></tr>
-<tr><th scope="row" class="k">지원사업·투자 정보</th><td data-label="검토하는 내용">후속 개발·실증·자금 준비의 경로</td><td data-label="해석할 때 구분하는 점">지원·투자의 확정으로 표현하지 않습니다.</td></tr>
-</tbody>
-</table>
-<h3 class="subh">후보는 확인 단계로 구분합니다</h3>
-<ol class="stages"><li>탐색 후보</li><li>근거 검토</li><li>관심 확인</li><li>협의 진행</li></ol>
-<p class="data__stagenote">후보표에는 후보명과 함께 선정 근거, 활용 가설, 근거 출처·기준일, 확인이 필요한 사항, 다음 행동을 적습니다. 단계는 자동으로 넘어가지 않으며 확인한 날짜와 주체를 기록합니다. 확인되지 않은 후보를 수요가 없는 후보로 단정하지 않습니다.</p>
-<div class="blis">
-<h3>BLIS — 기업·기술 정보를 사업화 판단으로 연결하는 분석 기반</h3>
-<p>축적·연계한 자료를 고객의 현안에 맞춰 검토하고, 후보 선정 근거와 남은 확인 사항을 함께 정리합니다. AC·VC 및 기업과의 접점을 통해 확보한 정보는 출처와 확인 시점을 구분해 보완합니다.</p>
-<p class="small">누구나 이용할 수 있는 BLIS 공개 서비스는 <a class="tlink" href="#resources">자료·인사이트</a>에서 안내합니다.</p>
+<div class="cards">
+<article class="card rv" id="c-startup">
+<div class="card__top"><span class="card__n">01</span><span class="card__who">스타트업</span></div>
+<h3>필요한 기술과 자금, 함께할 파트너를 찾고 있습니까?</h3>
+<p>제품을 고도화할 공공기술과 협력기관을 검토하고, 정부 R&amp;D·실증·투자 준비의 순서를 정리합니다.</p>
+<ul>
+<li>공공기술·연구기관 후보 검토</li>
+<li>정부지원사업 활용과 5개년 계획</li>
+<li>컨소시엄·과제 기획, IR 보완</li>
+</ul>
+<div class="card__out"><b>OUTPUT</b>기술 후보표 · 과제기획안 · 성장 로드맵</div>
+<span class="card__cta">스타트업 서비스 <span aria-hidden="true">→</span></span>
+<a class="card__link" href="solutions/startups/index.html" aria-label="스타트업 서비스 자세히 보기"></a>
+</article>
+<article class="card rv" id="c-investor" data-d="1">
+<div class="card__top"><span class="card__n">02</span><span class="card__who">AC · VC</span></div>
+<h3>포트폴리오 기업마다 다른 기술·R&amp;D 과제를 어떻게 지원할까요?</h3>
+<p>보육·투자기업의 현황과 기술로드맵을 확인하고, 기업별 실행계획으로 지원 우선순위를 정합니다.</p>
+<ul>
+<li>기업별 기술·R&amp;D 현황 진단</li>
+<li>지원사업 활용 검토와 5개년 신청계획</li>
+<li>후속 과제기획과 실무교육 구성</li>
+</ul>
+<div class="card__out"><b>OUTPUT</b>기업별 통합 검토보고서 · 지원 우선순위</div>
+<span class="card__cta">포트폴리오 지원 구성 <span aria-hidden="true">→</span></span>
+<a class="card__link" href="solutions/investors/index.html" aria-label="AC·VC 포트폴리오 지원 자세히 보기"></a>
+</article>
+<article class="card rv" id="c-research" data-d="2">
+<div class="card__top"><span class="card__n">03</span><span class="card__who">대학 · 출연연 · TLO</span></div>
+<h3>우리 기술을 활용할 기업, 기존 접점 밖에서도 찾고 있습니까?</h3>
+<p>기술의 적용 분야와 기업의 사업 방향을 함께 살펴 활용 후보기업을 찾고, 기업별 제안 근거를 정리합니다.</p>
+<ul>
+<li>기술 활용 후보기업 발굴</li>
+<li>기업별 제안 논리·SMK 구성</li>
+<li>산학연 컨소시엄·연구원창업 지원</li>
+</ul>
+<div class="card__out"><b>OUTPUT</b>활용 후보기업표 · 기술 제안자료 · 협력 구성안</div>
+<span class="card__cta">공공기술 사업화 서비스 <span aria-hidden="true">→</span></span>
+<a class="card__link" href="solutions/research/index.html" aria-label="대학·출연연·TLO 서비스 자세히 보기"></a>
+</article>
 </div>
 </div>
 </section>
 
-<section class="sec" id="process" aria-labelledby="process-h">
-<div class="container">
-<h2 id="process-h">후보를 찾고, 함께 추진할 과제로 구체화합니다</h2>
-<ol class="proc">
-<li><span class="proc__n" aria-hidden="true">01</span><h3>현안을 정의합니다</h3><p>기업의 개발 목표, 기관의 사업화 대상 기술, 포트폴리오의 지원 과제를 확인합니다. 지금 결정할 일과 필요한 자료를 정리합니다.</p></li>
-<li><span class="proc__n" aria-hidden="true">02</span><h3>후보와 근거를 검토합니다</h3><p>기업·기술·R&amp;D·특허·지원사업 정보를 대조합니다. 왜 이 후보가 적합한지, 어떤 조건을 더 확인해야 하는지 제시합니다.</p></li>
-<li><span class="proc__n" aria-hidden="true">03</span><h3>협력 구조를 설계합니다</h3><p>필요한 연구기관·기업·수요처의 역할과 협력 경로를 정리합니다. 합의한 과업 범위에 따라 적용 조건과 협의 쟁점을 확인합니다.</p></li>
-<li><span class="proc__n" aria-hidden="true">04</span><h3>실행계획으로 옮깁니다</h3><p>과제 목표·검증 방법·추진체계, 연차별 개발·자금 계획, 사업화 제안자료를 구체화합니다. 고객이 다음 협의와 신청 준비에 활용할 결과물로 전달합니다.</p></li>
+<!-- 3. 진행 방식 -->
+<section class="sec sec--tight" id="process" aria-labelledby="process-h">
+<div class="wrap">
+<div class="sec__head rv">
+<div>
+<p class="eyebrow">02 — 어떻게 일하나</p>
+<h2 class="h-sec" id="process-h">후보를 찾고,<br><em>함께 추진할 과제</em>로 구체화합니다.</h2>
+</div>
+<p class="lead">목록을 전달하는 데서 끝나지 않습니다. 왜 이 후보인지, 무엇을 더 확인해야 하는지, 어떤 협력으로 이어갈지를 함께 정리합니다.</p>
+</div>
+<ol class="steps">
+<li class="step rv"><div class="step__n">01</div><h3>현안을 정의합니다</h3><p>개발 목표, 사업화 대상 기술, 포트폴리오의 지원 과제를 확인하고 지금 결정할 일을 정리합니다.</p></li>
+<li class="step rv" data-d="1"><div class="step__n">02</div><h3>후보와 근거를 검토합니다</h3><p>기업·기술·R&amp;D·특허·지원사업 정보를 대조해 적합한 이유와 더 확인할 조건을 제시합니다.</p></li>
+<li class="step rv" data-d="2"><div class="step__n">03</div><h3>협력 구조를 설계합니다</h3><p>연구기관·기업·수요처의 역할과 협력 경로를 정리하고 협의 쟁점을 확인합니다.</p></li>
+<li class="step rv" data-d="3"><div class="step__n">04</div><h3>실행계획으로 옮깁니다</h3><p>과제 목표·검증 방법·추진체계, 연차별 자금 계획, 제안자료를 다음 협의와 신청에 쓸 문서로 전달합니다.</p></li>
 </ol>
-<p class="proc__note">연구기관·기업과의 직접 협의를 브릿지랩이 맡는 경우에는 과업 범위에 명시하며, 협약·계약 체결은 고객이 진행합니다.</p>
+<p class="note">연구기관·기업과의 직접 협의를 브릿지랩이 맡는 경우에는 과업 범위에 명시하며, 협약·계약 체결은 고객이 진행합니다. <a class="more" href="method/index.html#process">단계별 상세 보기</a></p>
 </div>
 </section>
 
+<!-- 4. 근거 -->
+<section class="sec dark" id="data" aria-labelledby="data-h">
+<div class="wrap">
+<div class="sec__head rv">
+<div>
+<p class="eyebrow">03 — 무엇을 근거로 보나</p>
+<h2 class="h-sec" id="data-h">어떤 기술인가에 더해,<br><em>어느 기업의 어떤 과제</em>에 필요한지 봅니다.</h2>
+</div>
+</div>
+<div class="stats">
+<div class="stat rv"><div class="stat__v">1,600<small>여 건</small></div><div class="stat__l">기업 정보</div><div class="stat__n">2026.10.08 기준. 분석에 활용하는 기업 정보의 규모이며 고객 수나 제휴기업 수가 아닙니다.</div></div>
+<div class="stat rv" data-d="1"><div class="stat__v">2만<small>여 건 · 26개 기관</small></div><div class="stat__l">공공기술 정보</div><div class="stat__n">2026.10.08 기준. 대학·출연연이 공개한 기술 정보의 등재 건수이며 중복을 제외한 원천기술 수가 아닙니다.</div></div>
+</div>
+<div class="data__grid">
+<div class="rv">
+<div class="srcs" aria-label="교차 검토하는 정보원">
+<span class="tag"><b>A</b>기업 정보</span><span class="tag"><b>B</b>공공기술 정보</span><span class="tag"><b>C</b>국가 R&amp;D 이력</span><span class="tag"><b>D</b>관련 특허</span><span class="tag"><b>E</b>지원사업·투자 정보</span>
+</div>
+<p class="lead">다섯 정보원을 고객의 질문에 따라 다른 비중으로 대조합니다. 후보는 탐색·근거 검토·관심 확인·협의 진행의 네 단계로 구분하고, 확인한 날짜와 주체를 기록합니다.</p>
+</div>
+<div class="rv" data-d="1">
+<p class="lead">이 분석 기반을 BLIS라 부릅니다. 축적·연계한 자료를 현안에 맞춰 검토하고, 후보 선정 근거와 남은 확인 사항을 함께 정리합니다. 정보가 있다는 것과 지금 도입 의향이 있다는 것은 따로 확인합니다.</p>
+<p style="margin-top:22px"><a class="more" href="method/index.html#data">정보원 교차 매트릭스와 해석 기준 보기</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 5. 결과물 -->
 <section class="sec" id="outputs" aria-labelledby="outputs-h">
-<div class="container">
-<div class="sechead">
+<div class="wrap">
+<div class="sec__head rv">
 <div>
-<h2 id="outputs-h">결과물에서 검토의 깊이를 확인하세요</h2>
-<p class="lead sec__lead">공개 샘플은 가상 기업을 대상으로 작성한 정부지원사업 검토 문서입니다. 서비스의 구성과 검토 방식을 보여주는 자료이며, 아래 이미지는 샘플 문서의 일부 표를 잘라 보여줍니다.</p>
+<p class="eyebrow">04 — 무엇을 받나</p>
+<h2 class="h-sec" id="outputs-h">결과물에서<br><em>검토의 깊이</em>를 확인하세요.</h2>
 </div>
-<div class="slot slot--s3" aria-hidden="true"><img src="assets/img/outputs-desk.png" alt="" loading="lazy" decoding="async" onerror="this.hidden=true"></div>
+<p class="lead">가상 기업을 대상으로 작성한 정부지원사업 검토 문서의 공개 샘플입니다. 아래는 샘플의 일부 표를 잘라 보여줍니다.</p>
 </div>
-<figure class="fg">
-<p class="fg__title">후보표 한 행의 구성</p>
-<ul class="row6"><li>후보명</li><li>선정 근거</li><li>활용 가설</li><li>근거 출처·기준일</li><li>확인이 필요한 사항</li><li>다음 행동</li></ul>
-<div class="stl"><span class="stl__l">확인 단계</span>
-<ol class="rail rail--chev"><li>탐색 후보</li><li>근거 검토</li><li>관심 확인</li><li>협의 진행</li></ol></div>
-<figcaption>후보표는 후보명만이 아니라 판단 근거와 다음 행동을 함께 적습니다.</figcaption>
-</figure>
-<ol class="docs">
-<li class="doc">
-<figure class="doc__fig">
-<a class="doc__frame" href="assets/preview-lv1-priority.png" target="_blank" rel="noopener"><img src="assets/preview-lv1-priority.png" width="1200" height="1493" loading="lazy" alt="정부지원사업 활용기회 검토보고서 샘플의 우선 추천 사업 총괄표 일부. 순위, 사업명, 소관 부처, 유형, 지원 규모·기간, 적합도 등급, 공고 예상 시기 열로 구성"><span class="doc__open" aria-hidden="true">원본 보기 ↗</span><span class="visually-hidden">(원본 이미지, 새 창)</span></a>
-<figcaption>「정부지원사업 활용기회 검토보고서」 샘플 〈표 6〉 우선 추천 사업 총괄 중 상위 5행 발췌(원문 두 쪽에 걸친 표를 이어 보여줍니다)</figcaption>
-</figure>
-<div class="doc__body">
-<span class="chip chip--teal">가상 기업 샘플</span>
-<h3>우선 추천 사업 총괄표</h3>
-<p>기업의 신청 요건과 기술 방향을 검토해 먼저 준비할 사업을 고르고, 사업별 상세 검토로 연결합니다.</p>
-<span class="label label--muted">이 표에서 보는 것</span>
-<dl><div><dt>적합도 등급</dt><dd>기업의 자격·기술 방향과 사업 요건이 맞는 정도</dd></div><div><dt>지원 규모·기간</dt><dd>공고 기준의 지원 범위와 수행 기간</dd></div><div><dt>공고 예상 시기</dt><dd>신청 준비를 시작할 시점</dd></div><div><dt>상세 검토</dt><dd>사업별 검토표로 이어지는 참조 번호</dd></div></dl>
+<div class="gallery">
+<figure class="shot rv"><a href="assets/preview-lv1-priority.png" target="_blank" rel="noopener"><div class="shot__img"><img src="assets/preview-lv1-priority.png" alt="정부지원사업 활용기회 검토보고서 샘플의 우선 추천 사업 총괄표 일부" loading="lazy" width="1200" height="1493"></div><figcaption><span class="tag">검토보고서 · 표 6</span><b>우선 추천 사업 총괄표</b><span>신청 요건과 기술 방향을 검토해 먼저 준비할 사업을 고르고, 사업별 상세 검토로 연결합니다.</span></figcaption></a></figure>
+<figure class="shot rv" data-d="1"><a href="assets/preview-lv2-calendar.png" target="_blank" rel="noopener"><div class="shot__img"><img src="assets/preview-lv2-calendar.png" alt="정부지원사업 5개년 활용계획 샘플의 5개년 추진 일정" loading="lazy" width="1200" height="721"></div><figcaption><span class="tag">5개년 계획 · 그림 Ⅸ-1</span><b>5개년 추진 일정</b><span>연차별 과제 신청·수행 시점을 성능 검증, 설비·인증, 투자 준비 일정과 한 화면에서 맞춰 봅니다.</span></figcaption></a></figure>
+<figure class="shot rv" data-d="2"><a href="assets/preview-lv2-taskcard.png" target="_blank" rel="noopener"><div class="shot__img"><img src="assets/preview-lv2-taskcard.png" alt="정부지원사업 5개년 활용계획 샘플의 과제카드" loading="lazy" width="1200" height="768"></div><figcaption><span class="tag">5개년 계획 · 표 Ⅹ-1</span><b>과제카드</b><span>무엇을 개발하고 어떻게 검증할지, 누구와 함께할지, 신청 전에 무엇을 준비할지 과제마다 한 장으로 정리합니다.</span></figcaption></a></figure>
 </div>
-</li>
-<li class="doc">
-<figure class="doc__fig">
-<a class="doc__frame" href="assets/preview-lv2-calendar.png" target="_blank" rel="noopener"><img src="assets/preview-lv2-calendar.png" width="1200" height="721" loading="lazy" alt="정부지원사업 5개년 활용계획 샘플의 5개년 추진 일정 도표. 정부 R&amp;D 과제, 성능 검증·PoC, 투자 유치, 생산설비·인증, 권리 확보 항목을 연도별 막대로 배치"><span class="doc__open" aria-hidden="true">원본 보기 ↗</span><span class="visually-hidden">(원본 이미지, 새 창)</span></a>
-<figcaption>「정부지원사업 5개년 활용계획」 샘플 〈그림 Ⅸ-1〉 5개년 추진 일정</figcaption>
-</figure>
-<div class="doc__body">
-<span class="chip chip--teal">가상 기업 샘플</span>
-<h3>5개년 추진 일정</h3>
-<p>연차별 정부 과제 신청·수행 시점을 성능 검증, 설비·인증, 투자 준비 일정과 한 화면에서 맞춰 봅니다.</p>
-<span class="label label--muted">이 표에서 보는 것</span>
-<dl><div><dt>정부 R&amp;D 과제</dt><dd>연차별로 신청·수행할 과제의 시작과 종료</dd></div><div><dt>성능 검증·PoC</dt><dd>과제 성과를 고객 검증으로 잇는 시점</dd></div><div><dt>투자 유치</dt><dd>과제 일정과 맞물리는 자금 준비 단계</dd></div><div><dt>생산설비·인증·권리 확보</dt><dd>사업화에 필요한 선행 조건</dd></div></dl>
-</div>
-</li>
-<li class="doc">
-<figure class="doc__fig">
-<a class="doc__frame" href="assets/preview-lv2-taskcard.png" target="_blank" rel="noopener"><img src="assets/preview-lv2-taskcard.png" width="1200" height="768" loading="lazy" alt="정부지원사업 5개년 활용계획 샘플의 과제카드. 과제명, 대상 사업, 정부지원금 규모와 기간, 추진 목표, 컨소시엄 구성, 신청 예정 시기, 사전 준비 사항, 정책 근거, 연계 마일스톤 항목으로 구성"><span class="doc__open" aria-hidden="true">원본 보기 ↗</span><span class="visually-hidden">(원본 이미지, 새 창)</span></a>
-<figcaption>「정부지원사업 5개년 활용계획」 샘플 〈표 Ⅹ-1〉 과제카드(공개용으로 일부 기업명은 가렸습니다)</figcaption>
-</figure>
-<div class="doc__body">
-<span class="chip chip--teal">가상 기업 샘플</span>
-<h3>과제카드</h3>
-<p>무엇을 개발하고 어떻게 검증할지, 누구와 함께할지, 신청 전에 무엇을 준비할지 과제마다 한 장으로 정리합니다.</p>
-<span class="label label--muted">이 표에서 보는 것</span>
-<dl><div><dt>추진 목표</dt><dd>과제가 끝났을 때 확인할 개발·검증 결과</dd></div><div><dt>컨소시엄 구성(안)</dt><dd>주관·참여·협력 기관의 역할</dd></div><div><dt>사전 준비 사항</dt><dd>신청 전에 갖출 인증·데이터·협의</dd></div><div><dt>연계 마일스톤</dt><dd>앞뒤 과제·투자 준비와의 연결</dd></div></dl>
-</div>
-</li>
-</ol>
-<h3 class="subh">이 밖의 결과물</h3>
-<dl class="more">
-<div><dt>기술 후보 검토표</dt><dd>필요한 기능과 후보 기술의 접점, 적용 가능성을 검토한 근거, 추가 검증 사항을 비교합니다.</dd></div>
-<div><dt>활용 후보기업 검토표</dt><dd>기업의 제품·사업 방향과 기술의 활용 가설을 연결하고, 근거 자료·수요 확인 상태·다음 행동을 정리합니다.</dd></div>
-<div><dt>과제카드·컨소시엄 구성안</dt><dd>무엇을 개발하고 어떻게 검증할지, 어느 기관이 어떤 역할을 맡을지, 신청 전 무엇을 준비할지 정리합니다.</dd></div>
-<div><dt>투자 준비도 검토</dt><dd>투자 검토에 필요한 기업의 설명과 증빙을 점검하고, 보완 항목과 투자자 후보의 검토 근거를 제시합니다.</dd></div>
-</dl>
-<div class="docs__after">
-<a class="btn btn--ghost" href="https://www.bridgelab.co.kr/reports/" target="_blank" rel="noopener">공개 보고서 샘플 보기 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a>
-<p class="small">기술 후보 검토표, 활용 후보기업 검토표, 투자 준비도 검토는 고객 자료를 다루므로 공개 샘플을 제공하지 않고 상담에서 구성을 설명합니다.</p>
+<div class="row rv">
+<a class="btn" href="https://www.bridgelab.co.kr/reports/" target="_blank" rel="noopener">공개 보고서 샘플 보기 <span class="arr" aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a>
+<a class="more" href="method/index.html#outputs">이 밖의 결과물 구성 보기</a>
 </div>
 </div>
 </section>
 
-<section class="sec" id="cases" aria-labelledby="cases-h">
-<div class="container">
-<h2 id="cases-h">분석에서 후속 협의로 이어진 사례</h2>
-<p class="lead sec__lead">고객명과 수치는 공개하지 않고 고객 유형으로 소개합니다. 각 산출물은 검토 자료이며 계약·기술이전·투자의 성사를 뜻하지 않습니다.</p>
-<div class="cases__head" aria-hidden="true"><span>현안<i></i></span><span>검토 근거<i></i></span><span>산출물<i></i></span><span>후속 과업</span></div>
-<ol class="cases">
-<li class="case">
-<div class="case__meta"><h3>출연연 연구단</h3><ul class="chips"><li class="chip">브릿지랩 명의</li><li class="chip">2026년 9월</li><li class="chip chip--teal">산출물 전달, 후속사업 결과 미정</li></ul></div>
-<dl>
-<div><dt>현안</dt><dd>보유특허 가운데 무엇을 먼저 활용할지, 후속 사업의 필요성을 어떻게 설명할지 정리해야 했습니다.</dd></div>
-<div><dt>검토 근거</dt><dd>보유특허를 기술 분야와 활용 가능성에 따라 등급화하고, 기술별 활용 후보기업을 검토했습니다.</dd></div>
-<div><dt>산출물</dt><dd>특허 등급표와 활용 후보기업 목록, 후속 대형사업의 당위를 논증한 자료</dd></div>
-<div><dt>후속 과업</dt><dd>지원사업 분야별 우선순위 정리와 연구원창업 로드맵 검토로 이어졌습니다.</dd></div>
-</dl>
-</li>
-<li class="case">
-<div class="case__meta"><h3>환경 분야 딥테크 기업</h3><ul class="chips"><li class="chip">브릿지랩 명의</li><li class="chip">2026년 9월</li><li class="chip chip--teal">연구기관 협력 협의 진행 중(2026.10 기준)</li></ul></div>
-<dl>
-<div><dt>현안</dt><dd>투자 준비와 제품 고도화를 함께 추진하며, 검토할 투자자와 활용할 공공기술을 찾고 있었습니다.</dd></div>
-<div><dt>검토 근거</dt><dd>투자자 후보의 투자 분야·단계를 분석하고, 제품 개선에 활용할 수 있는 출연연 공공기술 후보를 검토했습니다.</dd></div>
-<div><dt>산출물</dt><dd>투자자 후보·공공기술 후보 검토 보고서, 연구기관과의 협력 협의자료</dd></div>
-<div><dt>후속 과업</dt><dd>연구기관과 공동개발 방향을 협의하고 있습니다.</dd></div>
-</dl>
-</li>
-<li class="case">
-<div class="case__meta"><h3>지역 미디어 기업</h3><ul class="chips"><li class="chip">브릿지랩 명의</li><li class="chip">2026년 9월</li><li class="chip chip--teal">검토보고서 전달</li></ul></div>
-<dl>
-<div><dt>현안</dt><dd>회사의 사업과 기술 단계에 맞는 정부지원사업이 무엇인지, 어떤 순서로 준비할지 판단이 필요했습니다.</dd></div>
-<div><dt>검토 근거</dt><dd>신청 자격, 수행 이력, 기술 방향을 지원사업 요건과 대조해 검토 우선순위를 정했습니다.</dd></div>
-<div><dt>산출물</dt><dd>정부지원사업 활용기회 검토보고서(검토 우선순위표 포함)</dd></div>
-<div><dt>후속 과업</dt><dd>우선 사업의 신청 준비 여부는 기업이 결정하며, 후속 과업은 필요 시 협의합니다.</dd></div>
-</dl>
-</li>
-</ol>
-<p class="small" style="margin-top:20px">대표가 이전 소속에서 참여한 업무 경험은 <a class="tlink" href="about/index.html#experience">브릿지랩 소개 페이지</a>에 구분하여 적었습니다.</p>
-</div>
-</section>
-
-<section class="sec" id="about-summary" aria-labelledby="about-summary-h">
-<div class="container sum">
+<!-- 6. 사례 -->
+<section class="sec sec--tight" id="cases" aria-labelledby="cases-h">
+<div class="wrap">
+<div class="sec__head rv">
 <div>
-<h2 id="about-summary-h">기술·제도·기업 현장을 함께 이해합니다.</h2>
-<p>브릿지랩은 공공 R&amp;D 사업관리, 연구단 기술사업화, 민간 AC의 기업 지원 경험을 바탕으로 딥테크 성장전략과 기술사업화 과제를 검토합니다. 기업과 기술에 대한 데이터를 실무 경험으로 해석하고, 협력 주체와 실행 순서를 구체적인 문서와 계획으로 정리합니다.</p>
-<div class="btns"><a class="btn btn--ghost" href="about/index.html">대표 경력과 수행 경험 보기</a></div>
+<p class="eyebrow">05 — 어떻게 이어졌나</p>
+<h2 class="h-sec" id="cases-h">분석에서 <em>후속 협의</em>로<br>이어진 사례</h2>
 </div>
-<div class="sum__r">
-<figure class="fg fg--first">
-<p class="fg__title">세 경험의 교차</p>
-<div class="x3">
-<ul class="x3__r">
-<li class="x3__a"><strong>제도</strong><span class="visually-hidden"> — </span><span>국가 R&amp;D 사업관리</span></li>
-<li class="x3__b"><strong>기술</strong><span class="visually-hidden"> — </span><span>연구단 기술사업화</span></li>
-<li class="x3__c2"><strong>기업</strong><span class="visually-hidden"> — </span><span>AC 기업 지원</span></li>
+<p class="lead">고객명과 수치는 공개하지 않고 고객 유형으로 소개합니다. 각 산출물은 검토 자료이며 계약·기술이전·투자의 성사를 뜻하지 않습니다.</p>
+</div>
+<ul class="cases">
+<li class="case rv"><div class="case__who">출연연 연구단<small>2026.09 · 브릿지랩 명의</small></div><p><b>현안 → 산출물</b>보유특허 가운데 무엇을 먼저 활용할지 정리해야 했습니다. 특허를 등급화하고 기술별 활용 후보기업을 검토해 등급표와 후보기업 목록, 후속 대형사업의 당위 자료를 전달했습니다.</p><p><b>후속</b>지원사업 분야별 우선순위 정리와 연구원창업 로드맵 검토로 이어졌습니다. 후속사업 결과는 미정입니다.</p></li>
+<li class="case rv"><div class="case__who">환경 분야 딥테크 기업<small>2026.09 · 브릿지랩 명의</small></div><p><b>현안 → 산출물</b>투자 준비와 제품 고도화를 함께 추진하고 있었습니다. 투자자 후보의 분야·단계를 분석하고 제품 개선에 쓸 출연연 공공기술 후보를 검토해 보고서와 협력 협의자료를 전달했습니다.</p><p><b>후속</b>연구기관과 공동개발 방향을 협의하고 있습니다(2026.10 기준).</p></li>
+<li class="case rv"><div class="case__who">지역 미디어 기업<small>2026.09 · 브릿지랩 명의</small></div><p><b>현안 → 산출물</b>사업과 기술 단계에 맞는 정부지원사업과 준비 순서를 판단해야 했습니다. 신청 자격·수행 이력·기술 방향을 요건과 대조해 활용기회 검토보고서를 전달했습니다.</p><p><b>후속</b>우선 사업의 신청 준비 여부는 기업이 결정하며, 후속 과업은 필요 시 협의합니다.</p></li>
 </ul>
-<p class="x3__c">브릿지랩</p>
-</div>
-<figcaption>제도, 기술, 기업 세 현장의 경험이 겹치는 지점에서 과제를 검토합니다.</figcaption>
-</figure>
-</div>
-<ul class="exp">
-<li><strong>제도를 이해하는 사업관리 경험</strong>국가 R&amp;D의 기획·운영·성과관리 경험을 바탕으로 사업의 목적, 신청 준비, 추진체계와 설명 근거를 검토합니다.</li>
-<li><strong>기술의 적용을 고민한 사업화 경험</strong>연구단의 IP·BM·SMK, 수요기업 발굴과 연구소기업 관련 업무 경험을 바탕으로 기술이 기업과 만나는 조건을 살펴봅니다.</li>
-<li><strong>기업의 성장을 지원한 AC 경험</strong>공공기술 기반 기획창업과 스타트업 지원 경험을 바탕으로 기업의 기술·사업·자금 과제를 함께 정리합니다.</li>
-</ul>
+<p class="note">대표가 이전 소속에서 참여한 업무 경험은 <a class="more" href="about/index.html#experience">브릿지랩 소개</a>에 구분하여 적었습니다.</p>
 </div>
 </section>
 
-<section class="sec" id="resources" aria-labelledby="resources-h">
-<div class="container">
-<h2 id="resources-h">자료·인사이트</h2>
-<p class="lead sec__lead">직접 열어 보고 활용할 수 있는 자료입니다. 자료마다 형태와 기준 시점을 함께 표시합니다.</p>
-<figure class="fg fg--first" style="margin-bottom:28px">
-<p class="fg__title">자료 활용 순서</p>
-<ol class="rail rail--chev">
-<li><a class="tlink" href="compass/index.html">나침반</a><span class="visually-hidden"> — </span><span class="rail__d">사업 구조 파악</span></li>
-<li><a class="tlink" href="https://gov.bridgelab.co.kr/" target="_blank" rel="noopener">모니터링 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a><span class="visually-hidden"> — </span><span class="rail__d">공고·마감 확인</span></li>
-<li><a class="tlink" href="https://www.bridgelab.co.kr/reports/" target="_blank" rel="noopener">결과물 샘플 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a><span class="visually-hidden"> — </span><span class="rail__d">검토 방식 확인</span></li>
-<li><a class="tlink" href="#contact">현안 상담</a><span class="visually-hidden"> — </span><span class="rail__d">우리 과제에 적용</span></li>
-</ol>
-<figcaption>자료는 사업 구조를 파악한 뒤 우리 과제에 적용하는 순서로 활용할 수 있습니다.</figcaption>
-</figure>
-<table class="tbl tbl--res">
-<thead><tr><th scope="col">자료</th><th scope="col">설명</th><th scope="col">형태</th><th scope="col">기준·발행</th><th scope="col">구분</th><th scope="col">열기</th></tr></thead>
-<tbody>
-<tr><th scope="row" class="k">검토 결과물 샘플</th><td data-label="설명">정부지원사업 활용기회 검토보고서와 5개년 활용계획 공개 샘플에서 검토 항목과 문서 구성을 확인합니다.</td><td data-label="형태"><span class="chip">문서(PDF)</span></td><td data-label="기준·발행"><span class="chip">2026.09 작성</span></td><td data-label="구분"><span class="chip chip--teal">가상 기업 샘플</span></td><td data-label="열기"><a class="tlink" href="https://www.bridgelab.co.kr/reports/" target="_blank" rel="noopener">샘플 보기 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a></td></tr>
-<tr><th scope="row" class="k">정부지원사업 나침반 2026</th><td data-label="설명">창업·사업화·R&amp;D 지원사업의 구조를 살펴보고 검토할 사업의 방향을 잡습니다.</td><td data-label="형태"><span class="chip">문서(웹)</span></td><td data-label="기준·발행"><span class="chip">기준 2026.10</span></td><td data-label="구분"><span class="chip chip--teal">공고 기반 정리</span></td><td data-label="열기"><a class="tlink" href="compass/index.html">나침반 보기</a> <a class="tlink" href="compass/2026-10/index.html">2026.10판</a></td></tr>
-<tr><th scope="row" class="k">정부지원사업 모니터링</th><td data-label="설명">공고를 찾아보고 분야와 마감 시점을 확인합니다.</td><td data-label="형태"><span class="chip">도구(웹)</span></td><td data-label="기준·발행"><span class="chip">공고 원문 연결</span></td><td data-label="구분"><span class="chip chip--teal">공고 검색</span></td><td data-label="열기"><a class="tlink" href="https://gov.bridgelab.co.kr/" target="_blank" rel="noopener">모니터링 열기 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a></td></tr>
-<tr><th scope="row" class="k">사업화 인사이트·R&amp;D 전망</th><td data-label="설명">기술사업화 현장의 쟁점과 정책·예산 흐름을 정리한 발행 자료입니다. 확정 정보와 전망을 구분해 적습니다.</td><td data-label="형태"><span class="chip">문서(발행물)</span></td><td data-label="기준·발행"><span class="chip">2026.08~09 발행</span></td><td data-label="구분"><span class="chip chip--teal">해설·전망 포함</span></td><td data-label="열기"><a class="tlink" href="mailto:yongman@bridgelab.co.kr?subject=%5B%EC%9E%90%EB%A3%8C%20%EC%9A%94%EC%B2%AD%5D%20%EC%82%AC%EC%97%85%ED%99%94%20%EC%9D%B8%EC%82%AC%EC%9D%B4%ED%8A%B8%C2%B7R%26D%20%EC%A0%84%EB%A7%9D&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%EC%9A%94%EC%B2%AD%20%EC%9E%90%EB%A3%8C%3A">이메일로 발행본 요청</a></td></tr>
-<tr><th scope="row" class="k">BLIS 공개 서비스</th><td data-label="설명">정부지원사업 공고·선정과제·투자조합 데이터를 분석해 다음 단계를 리포트로 안내하는 공개 서비스입니다.</td><td data-label="형태"><span class="chip">도구(웹)</span></td><td data-label="기준·발행"><span class="chip">서비스 내 기준일 표시</span></td><td data-label="구분"><span class="chip chip--teal">공개 서비스</span></td><td data-label="열기"><a class="tlink" href="https://blis.bridgelab.co.kr/" target="_blank" rel="noopener">BLIS 바로가기 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a></td></tr>
-</tbody>
-</table>
-<p class="small" style="margin-top:16px">데이터·분석 기반에서 설명한 BLIS 분석 기반에는 고객 상담에 쓰는 비공개 자료가 포함되며, 공개 서비스와 범위가 다릅니다.</p>
+<!-- 7. 브릿지랩 -->
+<section class="sec" id="about-summary" aria-labelledby="about-h">
+<div class="wrap who">
+<div class="rv">
+<p class="eyebrow">06 — 누가 하나</p>
+<h2 class="h-sec" id="about-h">제도·기술·기업,<br>세 현장이 <em>겹치는 지점</em>에서.</h2>
+<div class="chips">
+<div class="chip"><b>제도</b><span>국가 R&amp;D 사업관리</span></div>
+<div class="chip"><b>기술</b><span>연구단 기술사업화</span></div>
+<div class="chip"><b>기업</b><span>AC 기업 지원</span></div>
+</div>
+<p class="lead">공공 R&amp;D 사업관리, 연구단 기술사업화, 민간 AC의 기업 지원 경험을 바탕으로 과제를 검토합니다. 기업과 기술에 대한 데이터를 실무 경험으로 해석하고, 협력 주체와 실행 순서를 문서와 계획으로 정리합니다.</p>
+<p style="margin-top:26px"><a class="btn btn--ghost" href="about/index.html">대표 경력과 수행 경험 <span class="arr" aria-hidden="true">→</span></a></p>
+</div>
+<div class="who__mark rv" data-d="1" aria-hidden="true"><img src="assets/symbol.svg" alt="" width="440" height="300"></div>
 </div>
 </section>
 
-<section class="sec" id="contact" aria-labelledby="contact-h">
-<div class="container ct">
-<div class="ct__left">
-<h2 id="contact-h">지금 추진하려는 과제부터 알려주세요.</h2>
-<p class="ct__intro">필요한 기술, 활용할 기업, 함께할 파트너, 준비하고 있는 정부사업과 투자 현안을 알려주세요. 현재 상황과 목표 일정을 확인한 뒤 검토 범위와 진행 방식을 안내합니다.</p>
-<figure class="fg fg--first">
-<p class="fg__title">상담 진행</p>
-<ol class="rail rail--chev rail--3"><li>메일·폼 접수</li><li>현재 상황과 목표 일정 확인</li><li>검토 범위와 진행 방식 안내</li></ol>
-<figcaption>상담은 접수, 상황 확인, 범위 안내 순서로 진행합니다.</figcaption>
-</figure>
-<fieldset class="ct-type">
-<legend>고객 유형</legend>
-<input class="ct-r" type="radio" name="ct-type" id="ct-startup" checked><label class="ct-l" for="ct-startup">스타트업</label>
-<input class="ct-r" type="radio" name="ct-type" id="ct-acvc"><label class="ct-l" for="ct-acvc">AC·VC</label>
-<input class="ct-r" type="radio" name="ct-type" id="ct-research"><label class="ct-l" for="ct-research">대학·출연연·TLO</label>
-<input class="ct-r" type="radio" name="ct-type" id="ct-etc"><label class="ct-l" for="ct-etc">기타 기업·지원기관</label>
-<div class="ct-panels">
-<div class="ct-p ct-p-startup">
-<span class="label label--muted">메일에 담길 내용</span>
-<ul><li>기관·회사명:</li><li>담당자·회신 이메일:</li><li>현재 현안(필요한 기술, 추진할 과제, 검토 중인 정부사업·투자 준비 등):</li><li>목표 일정:</li></ul>
-<a class="btn" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%28%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B8%B0%EC%88%A0%2C%20%EC%B6%94%EC%A7%84%ED%95%A0%20%EA%B3%BC%EC%A0%9C%2C%20%EA%B2%80%ED%86%A0%20%EC%A4%91%EC%9D%B8%20%EC%A0%95%EB%B6%80%EC%82%AC%EC%97%85%C2%B7%ED%88%AC%EC%9E%90%20%EC%A4%80%EB%B9%84%20%EB%93%B1%29%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A">스타트업 상담 메일 작성</a>
+<!-- 8. 자료 -->
+<section class="sec sec--tight" id="resources" aria-labelledby="resources-h">
+<div class="wrap">
+<div class="sec__head rv">
+<div>
+<p class="eyebrow">07 — 직접 열어 보기</p>
+<h2 class="h-sec" id="resources-h">자료와 도구</h2>
 </div>
-<div class="ct-p ct-p-acvc">
-<span class="label label--muted">메일에 담길 내용</span>
-<ul><li>기관·회사명:</li><li>담당자·회신 이메일:</li><li>현재 현안(프로그램 목적, 지원 대상 기업 현황, 필요한 지원 등):</li><li>목표 일정:</li></ul>
-<a class="btn" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20AC%C2%B7VC%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%A7%80%EC%9B%90&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%28%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%EB%AA%A9%EC%A0%81%2C%20%EC%A7%80%EC%9B%90%20%EB%8C%80%EC%83%81%20%EA%B8%B0%EC%97%85%20%ED%98%84%ED%99%A9%2C%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%A7%80%EC%9B%90%20%EB%93%B1%29%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A">AC·VC 상담 메일 작성</a>
+<p class="lead">사업 구조를 파악하고, 공고와 마감을 확인하고, 검토 방식을 본 뒤 우리 과제에 적용하는 순서로 활용할 수 있습니다.</p>
 </div>
-<div class="ct-p ct-p-research">
-<span class="label label--muted">메일에 담길 내용</span>
-<ul><li>기관·회사명:</li><li>담당자·회신 이메일:</li><li>현재 현안(대상 기술·특허, 활용기업 탐색, 후속사업·창업·교육 등):</li><li>목표 일정:</li></ul>
-<a class="btn" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20%EB%8C%80%ED%95%99%C2%B7%EC%B6%9C%EC%97%B0%EC%97%B0%C2%B7TLO&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%28%EB%8C%80%EC%83%81%20%EA%B8%B0%EC%88%A0%C2%B7%ED%8A%B9%ED%97%88%2C%20%ED%99%9C%EC%9A%A9%EA%B8%B0%EC%97%85%20%ED%83%90%EC%83%89%2C%20%ED%9B%84%EC%86%8D%EC%82%AC%EC%97%85%C2%B7%EC%B0%BD%EC%97%85%C2%B7%EA%B5%90%EC%9C%A1%20%EB%93%B1%29%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A">대학·출연연·TLO 상담 메일 작성</a>
+<div class="tiles">
+<a class="tile rv" href="compass/index.html"><span class="tile__m">문서(웹) · 기준 2026.10</span><b>정부지원사업 나침반</b><p>창업·사업화·R&amp;D 지원사업의 구조를 살펴보고 검토할 사업의 방향을 잡습니다.</p><span class="tile__go">나침반 보기 →</span></a>
+<a class="tile rv" data-d="1" href="https://gov.bridgelab.co.kr/" target="_blank" rel="noopener"><span class="tile__m">도구(웹) · 공고 원문 연결</span><b>정부지원사업 모니터링</b><p>공고를 찾아보고 분야와 마감 시점을 확인합니다.</p><span class="tile__go">모니터링 열기 ↗<span class="visually-hidden">(새 창)</span></span></a>
+<a class="tile rv" data-d="2" href="https://www.bridgelab.co.kr/reports/" target="_blank" rel="noopener"><span class="tile__m">문서(PDF) · 2026.09 작성</span><b>검토 결과물 샘플</b><p>활용기회 검토보고서와 5개년 활용계획 공개 샘플에서 검토 항목과 문서 구성을 확인합니다.</p><span class="tile__go">샘플 보기 ↗<span class="visually-hidden">(새 창)</span></span></a>
+<a class="tile rv" data-d="3" href="https://blis.bridgelab.co.kr/" target="_blank" rel="noopener"><span class="tile__m">도구(웹) · 공개 서비스</span><b>BLIS 공개 서비스</b><p>공고·선정과제·투자조합 데이터를 분석해 다음 단계를 리포트로 안내합니다.</p><span class="tile__go">BLIS 바로가기 ↗<span class="visually-hidden">(새 창)</span></span></a>
 </div>
-<div class="ct-p ct-p-etc">
-<span class="label label--muted">메일에 담길 내용</span>
-<ul><li>기관·회사명:</li><li>담당자·회신 이메일:</li><li>현재 현안:</li><li>목표 일정:</li></ul>
-<a class="btn" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20%EA%B8%B0%ED%83%80%20%EA%B8%B0%EC%97%85%C2%B7%EC%A7%80%EC%9B%90%EA%B8%B0%EA%B4%80&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A">기타 문의 메일 작성</a>
+<p class="note">사업화 인사이트·R&amp;D 전망 발행물(2026.08~09)은 <a class="more" href="mailto:yongman@bridgelab.co.kr?subject=%5B%EC%9E%90%EB%A3%8C%20%EC%9A%94%EC%B2%AD%5D%20%EC%82%AC%EC%97%85%ED%99%94%20%EC%9D%B8%EC%82%AC%EC%9D%B4%ED%8A%B8%C2%B7R%26D%20%EC%A0%84%EB%A7%9D&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%EC%9A%94%EC%B2%AD%20%EC%9E%90%EB%A3%8C%3A">이메일로 발행본을 요청</a>할 수 있습니다.</p>
 </div>
+</section>
+
+<!-- 9. 상담 -->
+<section class="sec dark contact" id="contact" aria-labelledby="contact-h">
+<div class="hero__glow" aria-hidden="true"></div>
+<div class="wrap contact__grid">
+<div class="rv">
+<p class="eyebrow">08 — 시작하기</p>
+<h2 class="h-sec" id="contact-h">지금 추진하려는<br><em>과제</em>부터 알려주세요.</h2>
+<p class="lead" style="margin-top:18px">현재 상황과 목표 일정을 확인한 뒤 검토 범위와 진행 방식을 안내합니다. 고객 유형을 고르면 메일 양식이 열립니다.</p>
+<div class="mails">
+<a class="mail" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%28%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B8%B0%EC%88%A0%2C%20%EC%B6%94%EC%A7%84%ED%95%A0%20%EA%B3%BC%EC%A0%9C%2C%20%EA%B2%80%ED%86%A0%20%EC%A4%91%EC%9D%B8%20%EC%A0%95%EB%B6%80%EC%82%AC%EC%97%85%C2%B7%ED%88%AC%EC%9E%90%20%EC%A4%80%EB%B9%84%20%EB%93%B1%29%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A"><span><small>01</small>스타트업</span><span aria-hidden="true">→</span></a>
+<a class="mail" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20AC%C2%B7VC%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EC%A7%80%EC%9B%90&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%28%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%EB%AA%A9%EC%A0%81%2C%20%EC%A7%80%EC%9B%90%20%EB%8C%80%EC%83%81%20%EA%B8%B0%EC%97%85%20%ED%98%84%ED%99%A9%2C%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%A7%80%EC%9B%90%20%EB%93%B1%29%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A"><span><small>02</small>AC · VC</span><span aria-hidden="true">→</span></a>
+<a class="mail" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20%EB%8C%80%ED%95%99%C2%B7%EC%B6%9C%EC%97%B0%EC%97%B0%C2%B7TLO&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%28%EB%8C%80%EC%83%81%20%EA%B8%B0%EC%88%A0%C2%B7%ED%8A%B9%ED%97%88%2C%20%ED%99%9C%EC%9A%A9%EA%B8%B0%EC%97%85%20%ED%83%90%EC%83%89%2C%20%ED%9B%84%EC%86%8D%EC%82%AC%EC%97%85%C2%B7%EC%B0%BD%EC%97%85%C2%B7%EA%B5%90%EC%9C%A1%20%EB%93%B1%29%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A"><span><small>03</small>대학 · 출연연 · TLO</span><span aria-hidden="true">→</span></a>
+<a class="mail" href="mailto:yongman@bridgelab.co.kr?subject=%5B%ED%98%84%EC%95%88%20%EC%83%81%EB%8B%B4%5D%20%EA%B8%B0%ED%83%80%20%EA%B8%B0%EC%97%85%C2%B7%EC%A7%80%EC%9B%90%EA%B8%B0%EA%B4%80&amp;body=%EA%B8%B0%EA%B4%80%C2%B7%ED%9A%8C%EC%82%AC%EB%AA%85%3A%0D%0A%EB%8B%B4%EB%8B%B9%EC%9E%90%C2%B7%ED%9A%8C%EC%8B%A0%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0D%0A%ED%98%84%EC%9E%AC%20%ED%98%84%EC%95%88%3A%0D%0A%EB%AA%A9%ED%91%9C%20%EC%9D%BC%EC%A0%95%3A%0D%0A%0D%0A"><span><small>04</small>기타 기업 · 지원기관</span><span aria-hidden="true">→</span></a>
 </div>
-</fieldset>
+<p style="margin-top:22px"><a class="btn btn--ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSdkcuHvkktirhzCGdS8jalukBIsEavJQl_wFnUHwMgbEs32bg/viewform" target="_blank" rel="noopener">메일 대신 폼으로 요청 <span class="arr" aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a></p>
 </div>
-<div class="ct__right">
-<h3>처음 알려주실 내용</h3>
-<ol>
-<li>기관·회사명</li>
-<li>담당자·회신 이메일</li>
-<li>현재 현안</li>
-<li>목표 일정</li>
-</ol>
-<div class="btns">
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdkcuHvkktirhzCGdS8jalukBIsEavJQl_wFnUHwMgbEs32bg/viewform" target="_blank" rel="noopener">현안 상담 요청 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a>
-<a class="btn btn--ghost" href="mailto:yongman@bridgelab.co.kr">이메일로 문의</a>
-</div>
-<dl class="kv">
-<div><dt>이메일</dt><dd><a href="mailto:yongman@bridgelab.co.kr">yongman@bridgelab.co.kr</a></dd></div>
-<div><dt>전화</dt><dd><a href="tel:01029608750">010-2960-8750</a></dd></div>
-<div><dt>주소</dt><dd>대전광역시 유성구 대덕대로 582, 6층(도룡동, 옥토빌딩)</dd></div>
+<div class="contact__aside rv" data-d="1">
+<div class="ask"><b>처음 알려주실 내용</b><ol><li>기관·회사명</li><li>담당자·회신 이메일</li><li>현재 현안</li><li>목표 일정</li></ol></div>
+<dl>
+<div><dt>EMAIL</dt><dd><a href="mailto:yongman@bridgelab.co.kr">yongman@bridgelab.co.kr</a></dd></div>
+<div><dt>PHONE</dt><dd><a href="tel:01029608750">010-2960-8750</a></dd></div>
+<div><dt>OFFICE</dt><dd>대전광역시 유성구 대덕대로 582, 6층<br>(도룡동, 옥토빌딩)</dd></div>
 </dl>
-<p class="small">메일 프로그램이 열리지 않으면 위 주소로 직접 보내 주세요.</p>
+<p class="note" style="color:rgba(255,255,255,.45);margin-top:0">메일 프로그램이 열리지 않으면 위 주소로 직접 보내 주세요.</p>
 </div>
 </div>
 </section>
 </main>
 
-<footer class="site-footer">
-<div class="container">
+<footer class="ft">
+<div class="wrap ft__in">
+<div>
 <p>브릿지랩 · 대표 김용만 · 대전광역시 유성구 대덕대로 582, 6층(도룡동, 옥토빌딩)</p>
-<p><a href="mailto:yongman@bridgelab.co.kr">yongman@bridgelab.co.kr</a> · <a href="tel:01029608750">010-2960-8750</a></p>
-<ul class="site-footer__links">
+<ul>
 <li><a href="solutions/startups/index.html">스타트업</a></li>
 <li><a href="solutions/investors/index.html">AC·VC</a></li>
 <li><a href="solutions/research/index.html">대학·출연연·TLO</a></li>
+<li><a href="method/index.html">일하는 방식</a></li>
 <li><a href="about/index.html">브릿지랩 소개</a></li>
 <li><a href="compass/index.html">정부지원사업 나침반</a></li>
-<li><a href="https://www.bridgelab.co.kr/reports/" target="_blank" rel="noopener">공개 보고서 샘플 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a></li>
-<li><a href="https://gov.bridgelab.co.kr/" target="_blank" rel="noopener">모니터링 <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a></li>
-<li><a href="https://blis.bridgelab.co.kr/" target="_blank" rel="noopener">BLIS <span aria-hidden="true">↗</span><span class="visually-hidden">(새 창)</span></a></li>
+<li><a href="https://www.bridgelab.co.kr/reports/" target="_blank" rel="noopener" class="ext">공개 보고서 샘플</a></li>
+<li><a href="https://gov.bridgelab.co.kr/" target="_blank" rel="noopener" class="ext">모니터링</a></li>
+<li><a href="https://blis.bridgelab.co.kr/" target="_blank" rel="noopener" class="ext">BLIS</a></li>
 </ul>
-<p class="site-footer__copy">© 2026 Bridgelab</p>
+</div>
+<p class="ft__copy">© 2026 BRIDGELAB</p>
 </div>
 </footer>
 </body>
